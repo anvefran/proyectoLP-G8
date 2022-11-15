@@ -33,10 +33,33 @@ reservado = {
   'Println': 'PRINTLN',
   'Scanf': 'SCANF',
 
+    #EDUARDO
+  'type': 'TYPE',
+  'continue': 'CONTINUE',
+  'import': 'IMPORT',
+  'return': 'RETURN',
+  'var': 'VAR',
+  'if': 'IF',
+  'else': 'ELSE',
+  'switch': 'SWITCH',
+  'int': 'INTEGER',
+  'int8': 'INT8',
+  'int16': 'INT16',
+  'int64': 'INT64',
+  'float16': 'FLOAT16',
+  'float32': 'FLOAT32',
+  'complex64': 'COMPLEX64',
+  'complex128': 'COMPLEX128',
+  'uint8': 'UINT8',
+  'uint16': 'UINT16',
+  'uint32': 'UINT32',
+  'uint64': 'UINT64'
+
 }
 
 tokens = [
-    #Gabriel
+
+    #GABRIEL
   'ENTERO',
   'FLOAT',
   'BOOLEAN',
@@ -52,6 +75,7 @@ tokens = [
   'GREATERTHAN',
   'LESSTHAN',
   'EQUALTO',
+
   #ANDREA
   'COLON',
   'DOT',
@@ -63,6 +87,21 @@ tokens = [
   'LCOR',
   'SEMICOLON',
   'COMMA',
+
+  #EDUARDO
+  'NOTEQUALTO',
+  'AND',
+  'OR',
+  'NOT',
+  'GREATEROREQUAL',
+  'LESSOREQUAL',
+  'INCREMENT',
+  'DECREMENT',
+  'MODULUS',
+  'LEFTKEY',
+  'RIGHTKEY',
+  'IGNORE',
+
 ] + list(reservado.values())
 
 #Gabriel
@@ -89,6 +128,20 @@ t_GREATEROREQUAL = r'>='
 t_LESSOREQUAL = r'<='
 t_LEFTKEY = r'\{'
 t_RIGHTKEY = r'\}'
+
+#EDUARDO
+t_DOT = r'\.'
+t_IGNORE = r' \t'
+t_COLON = r':'
+t_SEMICOLON = r';'
+t_ARROBA = r'\@'
+t_NUMERAL = r'\#'
+t_BACKSLASH = r'\\'
+t_AMPERSON = r'\&'
+t_COMMA = r','
+t_LCOR = r'\['
+t_RCOR = r'\]'
+t_ignore = ' \t'
 
 #Gabriel
 def t_FLOAT(t):
@@ -118,6 +171,14 @@ def t_VARIABLE(t):
   t.type = reservado.get(t.value, 'VARIABLE')
   return t
 
+
+#EDUARDO
+#Agregue conteo de lineas
+def t_newline(t):
+  r'\n+'
+  t.lexer.lineno += len(t.value)
+
+
 #ANDREA
 #Agregue token de ignorar
 def t_COMMENTS(t):
@@ -139,3 +200,8 @@ def getTokens(lexer):
 
 
 file = open("source.txt")
+
+#EDUARDO
+for line in file:
+  lexer.input(line)
+  getTokens(lexer)
