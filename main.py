@@ -1,6 +1,7 @@
 import ply.lex as lex
 
 reservado = {
+    #Gabriel
   'struct': 'STRUCTURE',
   'chan': 'CHANNEL',
   'goto': 'GOTO',
@@ -18,6 +19,7 @@ reservado = {
 }
 
 tokens = [
+    #Gabriel
   'ENTERO',
   'FLOAT',
   'BOOLEAN',
@@ -35,6 +37,7 @@ tokens = [
   'EQUALTO'
 ] + list(reservado.values())
 
+#Gabriel
 t_PLUS = r'\+'
 t_MINUS = r'\-'
 t_TIMES = r'\*'
@@ -46,6 +49,7 @@ t_EQUALTO = r'=='
 t_LPAREN = r'\('
 t_RPAREN = r'\)'
 
+#Gabriel
 def t_FLOAT(t):
   r'\d+\.\d+'
   t.value = float(t.value)
@@ -74,6 +78,7 @@ def t_VARIABLE(t):
   return t
 
 
+#Gabriel
 lexer = lex.lex()
 
 def getTokens(lexer):
