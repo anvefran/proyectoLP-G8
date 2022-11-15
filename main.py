@@ -1,3 +1,4 @@
+
 import ply.lex as lex
 
 reservado = {
@@ -15,7 +16,23 @@ reservado = {
   'uint': 'UINT',
   'fmt': 'FMT',
   'string': 'STRING',
-  'make': 'MAKE'
+  'make': 'MAKE',
+  #ANDREA
+  'break': 'BREAK',
+  'default': 'DEFAULT',
+  'func': 'FUNCTION',
+  'interface': 'INTERFACE',
+  'select': 'SELECT',
+  'case': 'CASE',
+  'defer': 'DEFER',
+  'go': 'GO',
+  'map': 'MAP',
+  'for': 'FOR',
+  'bool': 'BOOL',
+  'Print': 'PRINT',
+  'Println': 'PRINTLN',
+  'Scanf': 'SCANF',
+
 }
 
 tokens = [
@@ -34,7 +51,18 @@ tokens = [
   'IGUAL',
   'GREATERTHAN',
   'LESSTHAN',
-  'EQUALTO'
+  'EQUALTO',
+  #ANDREA
+  'COLON',
+  'DOT',
+  'ARROBA',
+  'NUMERAL',
+  'BACKSLASH',
+  'AMPERSON',
+  'RCOR',
+  'LCOR',
+  'SEMICOLON',
+  'COMMA',
 ] + list(reservado.values())
 
 #Gabriel
@@ -48,6 +76,19 @@ t_LESSTHAN = r'<'
 t_EQUALTO = r'=='
 t_LPAREN = r'\('
 t_RPAREN = r'\)'
+
+#ANDREA
+t_NOTEQUALTO = r'!='
+t_AND = r'\&\&'
+t_OR = r'\|\|'
+t_NOT = r'!'
+t_INCREMENT = r'\+\+'
+t_DECREMENT = r'\-\-'
+t_MODULUS = r'\%'
+t_GREATEROREQUAL = r'>='
+t_LESSOREQUAL = r'<='
+t_LEFTKEY = r'\{'
+t_RIGHTKEY = r'\}'
 
 #Gabriel
 def t_FLOAT(t):
@@ -77,6 +118,17 @@ def t_VARIABLE(t):
   t.type = reservado.get(t.value, 'VARIABLE')
   return t
 
+#ANDREA
+#Agregue token de ignorar
+def t_COMMENTS(t):
+  r'\/\/.+|^\/\.+\\/$'
+  pass
+
+
+#Agregue token de error
+def t_error(t):
+  print("Caracter no permitido '%s'" % t.value[0])
+  t.lexer.skip(1)
 
 #Gabriel
 lexer = lex.lex()

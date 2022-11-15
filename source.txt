@@ -23,3 +23,52 @@ func main() {
         fmt.Println(num, "tiene muchos digitos")
     }
 }
+//ANDREA
+x := 2
+var edad int
+var varname string = "andrea"
+sum := 0
+for i := 0; i < 10; i++ {
+sum += i
+}
+fmt.Println(sum)
+
+switch (expresion) {
+case x:
+ //code
+case y:
+ //code
+default:
+ //code
+}
+if (condition) {
+ //code
+} else if (condition2){
+ //optional
+} else {
+ //else code
+}
+paises := make(map[string]int)
+//agregar algunas entradas
+paises["Italia"] = 30
+paises["Mexico"] = 20
+paises["Colombia"] = 40
+myslice := []int{1,2,3}
+var myArray [10]int
+//inicializacion
+for i := 0; i <= 100; i+=1{
+ myArray[i] = i + 1
+}
+package main
+import ("fmt")
+func main() {
+  var a string
+  var b int
+  var c bool
+  fmt.Println(a)
+  fmt.Println(b)
+  fmt.Println(c)
+}
+var student1 string = "John" 
+var student2 = "Jane" 
+const PI = 3.14
