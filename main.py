@@ -6,10 +6,14 @@ from lexico import tokens
 def p_cuerpo(p):
   '''cuerpo : asignacion
   | operacion
-  | comparacion'''
+  | comparacion
+  | slice
+  | sliceMethods
+  | impresion
+  '''
 
 
-#declaraciones
+#DECLARACIONES
 def p_asignacion(p):
   'asignacion : VARIABLE COLON IGUAL valor'
 
@@ -20,7 +24,7 @@ def p_valor(p):
   | STR '''
 
 
-#expresiones: operaciones y comparaciones
+#EXPRESIONES: operaciones y comparaciones
 #faltan las opciones de que sea 2+variable o 2+2
 def p_operacion(p):
   '''operacion : VARIABLE operadorOp VARIABLE
@@ -52,6 +56,54 @@ def p_operadorCmp(p):
   '''
 
 
+#ESTRUCTURAS DE DATOS: reglas sintácticas para declarar estructuras, es posible invocar a sus métodos.
+def p_slice(p):
+  '''slice : VARIABLE COLON IGUAL LCOR RCOR datatype LEFTKEY elementos RIGHTKEY
+  | VARIABLE COLON IGUAL LCOR RCOR datatype LEFTKEY RIGHTKEY
+  '''
+
+
+def p_datatype(p):
+  '''datatype : STRING
+  | INTEGER
+  | BOOL
+  | INT32
+  | UINT
+  | INT8
+  | INT16
+  | INT64
+  | FLOAT16
+  | FLOAT32
+  '''
+
+
+def p_elementos(p):
+  '''elementos : valor
+  | VARIABLE
+  | valor COMMA elementos
+  | VARIABLE COMMA elementos
+  '''
+
+
+#slice metodos para hallar la longitud y capacidad de un slice
+def p_sliceMethods(p):
+  '''sliceMethods  : LEN LPAREN VARIABLE RPAREN
+  | CAP LPAREN VARIABLE RPAREN
+  '''
+
+
+#FUNCIONES declaracion
+
+
+#funciones imprimir y entrada de datos
+def p_impresion(p):
+  '''impresion : FMT DOT PRINT LPAREN elementos RPAREN'''
+
+
+#ESTRUCTURAS DE CONTROL:Tienen reglas sintácticas para selección y repetición. Se pueden anidar, agregar al cuerpo otras reglas.
+
+
+#EXTRA
 def p_error(p):
   if p:
     print(

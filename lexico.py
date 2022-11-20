@@ -18,6 +18,8 @@ reservado = {
   'string': 'STRING',
   'make': 'MAKE',
   #ANDREA
+  'len': 'LEN',
+  'cap': 'CAP',
   'break': 'BREAK',
   'default': 'DEFAULT',
   'func': 'FUNCTION',
