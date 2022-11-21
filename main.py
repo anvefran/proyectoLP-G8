@@ -10,6 +10,8 @@ def p_cuerpo(p):
   | slice
   | sliceMethods
   | impresion
+  | declaracion
+  | conditional_structure
   '''
 
 
@@ -17,7 +19,29 @@ def p_cuerpo(p):
 def p_asignacion(p):
   'asignacion : VARIABLE COLON IGUAL valor'
 
+def p_declaracion(p):
+  'declaracion : VAR VARIABLE tipo IGUAL valor' 
 
+#tipos de datos
+def p_tipo(p):
+  '''tipo : INT32
+  | BYTE
+  | UINT
+  | STRING
+  | INTEGER
+  | INT8
+  | INT16
+  | INT64
+  | FLOAT16
+  | FLOAT32
+  | COMPLEX64
+  | COMPLEX128
+  | UINT8
+  | UINT16
+  | UINT32
+  | UINT64'''
+
+#Posibles asignaciones para una variable
 def p_valor(p):
   '''valor : ENTERO
   | FLOAT
@@ -28,7 +52,9 @@ def p_valor(p):
 #faltan las opciones de que sea 2+variable o 2+2
 def p_operacion(p):
   '''operacion : VARIABLE operadorOp VARIABLE
-  | VARIABLE incDec '''
+  | VARIABLE incDec 
+  | VARIABLE operadorOp valor
+  | valor operadorOp VARIABLE'''
 
 
 def p_operadorOp(p):
@@ -46,14 +72,33 @@ def p_incDec(p):
 
 def p_comparacion(p):
   '''comparacion : VARIABLE operadorCmp VARIABLE
-  | valor operadorCmp valor'''
+  | valor operadorCmp valor
+  | valor operadorCmp VARIABLE
+  | VARIABLE operadorCmp valor'''
 
 
 def p_operadorCmp(p):
   '''operadorCmp : NOTEQUALTO
   | GREATEROREQUAL
   | LESSOREQUAL
+  | GREATERTHAN
+  | LESSTHAN
   '''
+
+#ESTRUCTURAS DE CONTROL
+def p_conditional_structure(p):
+  '''conditional_structure : IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
+  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
+  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
+  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure ELSE LEFTKEY conditional_block RIGHTKEY'''
+
+def p_elif_structure(p):
+  '''elif_structure : ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
+  | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure'''
+
+#El contenido de un bloque condicional
+def p_conditional_block(p):
+  'conditional_block : cuerpo'
 
 
 #ESTRUCTURAS DE DATOS: reglas sintácticas para declarar estructuras, es posible invocar a sus métodos.
