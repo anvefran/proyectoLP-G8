@@ -1,0 +1,2883 @@
+//Eduardo
+
+None
+2022-11-21 22:19:13.434666
+//Condicionales
+
+None
+2022-11-21 22:19:13.434700
+if(x>2){x+2}
+
+None
+2022-11-21 22:19:13.434820
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:19:13.434947
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:19:13.435116
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:19:13.435304
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:19:13.435576
+
+
+None
+2022-11-21 22:19:13.435604
+//prints
+
+None
+2022-11-21 22:19:13.435632
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:19:13.435722
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:19:13.435811
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:19:13.435894
+
+
+None
+2022-11-21 22:19:13.435915
+//funciones
+
+None
+2022-11-21 22:19:13.435935
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:19:13.436035
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:19:13.436176
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:19:13.436320
+
+
+None
+2022-11-21 22:19:13.436346
+
+
+None
+2022-11-21 22:19:13.436364
+//Gabriel
+
+None
+2022-11-21 22:19:13.436384
+//For
+
+None
+2022-11-21 22:19:13.436405
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:19:13.436580
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:19:13.436807
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:19:13.436984
+//Switch
+
+None
+2022-11-21 22:19:13.437008
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:19:13.437125
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+None
+2022-11-21 22:19:13.437290
+//Maps
+
+None
+2022-11-21 22:19:13.437313
+paises := make(map[string]int)
+
+None
+2022-11-21 22:19:13.437393
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:19:13.437414
+paises["Italia"] = 30
+
+None
+2022-11-21 22:19:13.437471
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:19:13.437530
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:19:13.437607
+
+
+None
+2022-11-21 22:19:13.437630
+//Declaraciones
+
+None
+2022-11-21 22:19:13.437651
+var pais string
+
+None
+2022-11-21 22:19:13.437698
+var nume int
+
+None
+2022-11-21 22:19:13.437742
+
+
+None
+2022-11-21 22:19:13.437761
+//Eduardo
+
+None
+2022-11-21 22:21:32.639322
+//Condicionales
+
+None
+2022-11-21 22:21:32.639363
+if(x>2){x+2}
+
+None
+2022-11-21 22:21:32.639517
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:21:32.639758
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:21:32.639976
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:21:32.640230
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:21:32.640615
+
+
+None
+2022-11-21 22:21:32.640646
+//prints
+
+None
+2022-11-21 22:21:32.640675
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:21:32.640763
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:21:32.640849
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:21:32.640969
+
+
+None
+2022-11-21 22:21:32.640997
+//funciones
+
+None
+2022-11-21 22:21:32.641026
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:21:32.641161
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:21:32.641327
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:21:32.641489
+
+
+None
+2022-11-21 22:21:32.641519
+//Gabriel
+
+None
+2022-11-21 22:21:32.641546
+//For
+
+None
+2022-11-21 22:21:32.641580
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:21:32.641760
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:21:32.642031
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:21:32.642263
+//Switch
+
+None
+2022-11-21 22:21:32.642297
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:21:32.642440
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+None
+2022-11-21 22:21:32.642670
+//Maps
+
+None
+2022-11-21 22:21:32.642703
+paises := make(map[string]int)
+
+None
+2022-11-21 22:21:32.642808
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:21:32.642858
+paises["Italia"] = 30
+
+None
+2022-11-21 22:21:32.642939
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:21:32.643001
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:21:32.643076
+
+
+None
+2022-11-21 22:21:32.643119
+//Declaraciones
+
+None
+2022-11-21 22:21:32.643149
+var pais string
+
+None
+2022-11-21 22:21:32.643201
+var nume int
+
+None
+2022-11-21 22:21:32.643252
+
+
+None
+2022-11-21 22:21:32.643278
+//Gabriel
+
+None
+2022-11-21 22:21:32.643307
+package main
+
+None
+2022-11-21 22:21:32.643348
+import "fmt"
+
+None
+2022-11-21 22:21:32.643390
+if 7%2 == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+Error de sintaxis - Token: ENTERO, Línea: 41, Col: 5
+Error de sintaxis - Token: EQUALTO, Línea: 41, Col: 7
+Error de sintaxis - Token: ENTERO, Línea: 41, Col: 10
+Error de sintaxis - Token: LEFTKEY, Línea: 41, Col: 12
+Error de sintaxis - Token: FMT, Línea: 41, Col: 13
+Error de sintaxis - Token: DOT, Línea: 41, Col: 16
+Error de sintaxis - Token: PRINTLN, Línea: 41, Col: 17
+Error de sintaxis - Token: LPAREN, Línea: 41, Col: 24
+Error de sintaxis - Token: STR, Línea: 41, Col: 25
+Error de sintaxis - Token: RPAREN, Línea: 41, Col: 37
+Error de sintaxis - Token: RIGHTKEY, Línea: 41, Col: 38
+Error de sintaxis - Token: ELSE, Línea: 41, Col: 40
+Error de sintaxis - Token: LEFTKEY, Línea: 41, Col: 45
+Error de sintaxis - Token: FMT, Línea: 41, Col: 46
+Error de sintaxis - Token: DOT, Línea: 41, Col: 49
+Error de sintaxis - Token: PRINTLN, Línea: 41, Col: 50
+Error de sintaxis - Token: LPAREN, Línea: 41, Col: 57
+Error de sintaxis - Token: STR, Línea: 41, Col: 58
+Error de sintaxis - Token: RPAREN, Línea: 41, Col: 68
+Error de sintaxis - Token: RIGHTKEY, Línea: 41, Col: 69
+None
+2022-11-21 22:21:32.643640
+//Eduardo
+
+None
+2022-11-21 22:22:51.648390
+//Condicionales
+
+None
+2022-11-21 22:22:51.648423
+if(x>2){x+2}
+
+None
+2022-11-21 22:22:51.648598
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:22:51.648724
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:22:51.648878
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:22:51.649173
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:22:51.649532
+
+
+None
+2022-11-21 22:22:51.649559
+//prints
+
+None
+2022-11-21 22:22:51.649581
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:22:51.649646
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:22:51.649710
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:22:51.649786
+
+
+None
+2022-11-21 22:22:51.649806
+//funciones
+
+None
+2022-11-21 22:22:51.649826
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:22:51.649920
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:22:51.650041
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:22:51.650151
+
+
+None
+2022-11-21 22:22:51.650170
+//Gabriel
+
+None
+2022-11-21 22:22:51.650191
+//For
+
+None
+2022-11-21 22:22:51.650210
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:22:51.650329
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:22:51.650557
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:22:51.650806
+//Switch
+
+None
+2022-11-21 22:22:51.650837
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:22:51.650982
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+None
+2022-11-21 22:22:51.651172
+//Maps
+
+None
+2022-11-21 22:22:51.651198
+paises := make(map[string]int)
+
+None
+2022-11-21 22:22:51.651275
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:22:51.651300
+paises["Italia"] = 30
+
+None
+2022-11-21 22:22:51.651365
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:22:51.651420
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:22:51.651473
+
+
+None
+2022-11-21 22:22:51.651497
+//Declaraciones
+
+None
+2022-11-21 22:22:51.651543
+var pais string
+
+None
+2022-11-21 22:22:51.651585
+var nume int
+
+None
+2022-11-21 22:22:51.651620
+
+
+None
+2022-11-21 22:22:51.651638
+//Gabriel
+
+None
+2022-11-21 22:22:51.651657
+package main
+
+None
+2022-11-21 22:22:51.651685
+import "fmt"
+
+None
+2022-11-21 22:22:51.651714
+if 7%2 == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+Error de sintaxis - Token: ENTERO, Línea: 41, Col: 5
+Error de sintaxis - Token: EQUALTO, Línea: 41, Col: 7
+Error de sintaxis - Token: ENTERO, Línea: 41, Col: 10
+Error de sintaxis - Token: LEFTKEY, Línea: 41, Col: 12
+Error de sintaxis - Token: FMT, Línea: 41, Col: 13
+Error de sintaxis - Token: DOT, Línea: 41, Col: 16
+Error de sintaxis - Token: PRINTLN, Línea: 41, Col: 17
+Error de sintaxis - Token: LPAREN, Línea: 41, Col: 24
+Error de sintaxis - Token: STR, Línea: 41, Col: 25
+Error de sintaxis - Token: RPAREN, Línea: 41, Col: 37
+Error de sintaxis - Token: RIGHTKEY, Línea: 41, Col: 38
+Error de sintaxis - Token: ELSE, Línea: 41, Col: 40
+Error de sintaxis - Token: LEFTKEY, Línea: 41, Col: 45
+Error de sintaxis - Token: FMT, Línea: 41, Col: 46
+Error de sintaxis - Token: DOT, Línea: 41, Col: 49
+Error de sintaxis - Token: PRINTLN, Línea: 41, Col: 50
+Error de sintaxis - Token: LPAREN, Línea: 41, Col: 57
+Error de sintaxis - Token: STR, Línea: 41, Col: 58
+Error de sintaxis - Token: RPAREN, Línea: 41, Col: 68
+Error de sintaxis - Token: RIGHTKEY, Línea: 41, Col: 69
+None
+2022-11-21 22:22:51.651969
+//Eduardo
+
+None
+2022-11-21 22:26:07.208986
+//Condicionales
+
+None
+2022-11-21 22:26:07.209017
+if(x>2){x+2}
+
+None
+2022-11-21 22:26:07.209134
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:26:07.209252
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:26:07.209401
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:26:07.209589
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:26:07.209835
+
+
+None
+2022-11-21 22:26:07.209856
+//prints
+
+None
+2022-11-21 22:26:07.209877
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:26:07.209940
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:26:07.210002
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:26:07.210078
+
+
+None
+2022-11-21 22:26:07.210097
+//funciones
+
+None
+2022-11-21 22:26:07.210117
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:26:07.210210
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:26:07.210330
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:26:07.210429
+
+
+None
+2022-11-21 22:26:07.210447
+//Gabriel
+
+None
+2022-11-21 22:26:07.210466
+//For
+
+None
+2022-11-21 22:26:07.210485
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:26:07.210614
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:26:07.210890
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:26:07.211104
+//Switch
+
+None
+2022-11-21 22:26:07.211147
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:26:07.211314
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+None
+2022-11-21 22:26:07.211556
+//Maps
+
+None
+2022-11-21 22:26:07.211606
+paises := make(map[string]int)
+
+None
+2022-11-21 22:26:07.211711
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:26:07.211743
+paises["Italia"] = 30
+
+None
+2022-11-21 22:26:07.211819
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:26:07.211895
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:26:07.211968
+
+
+None
+2022-11-21 22:26:07.211993
+//Declaraciones
+
+None
+2022-11-21 22:26:07.212021
+var pais string
+
+None
+2022-11-21 22:26:07.212070
+var nume int
+
+None
+2022-11-21 22:26:07.212119
+
+
+None
+2022-11-21 22:26:07.212143
+//Gabriel
+
+None
+2022-11-21 22:26:07.212172
+package main
+
+None
+2022-11-21 22:26:07.212210
+import "fmt"
+
+None
+2022-11-21 22:26:07.212250
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:26:07.212428
+//Eduardo
+
+None
+2022-11-21 22:28:57.036930
+//Condicionales
+
+None
+2022-11-21 22:28:57.036966
+if(x>2){x+2}
+
+None
+2022-11-21 22:28:57.037102
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:28:57.037228
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:28:57.037386
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:28:57.037578
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:28:57.037833
+
+
+None
+2022-11-21 22:28:57.037855
+//prints
+
+None
+2022-11-21 22:28:57.037877
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:28:57.037944
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:28:57.038009
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:28:57.038095
+
+
+None
+2022-11-21 22:28:57.038115
+//funciones
+
+None
+2022-11-21 22:28:57.038137
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:28:57.038237
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:28:57.038359
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:28:57.038464
+
+
+None
+2022-11-21 22:28:57.038483
+//Gabriel
+
+None
+2022-11-21 22:28:57.038504
+//For
+
+None
+2022-11-21 22:28:57.038524
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:28:57.038652
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:28:57.038855
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:28:57.039027
+//Switch
+
+None
+2022-11-21 22:28:57.039088
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:28:57.039199
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+None
+2022-11-21 22:28:57.039366
+//Maps
+
+None
+2022-11-21 22:28:57.039392
+paises := make(map[string]int)
+
+None
+2022-11-21 22:28:57.039474
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:28:57.039496
+paises["Italia"] = 30
+
+None
+2022-11-21 22:28:57.039555
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:28:57.039617
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:28:57.039673
+
+
+None
+2022-11-21 22:28:57.039692
+//Declaraciones
+
+None
+2022-11-21 22:28:57.039712
+var pais string
+
+None
+2022-11-21 22:28:57.039749
+var nume int
+
+None
+2022-11-21 22:28:57.039785
+
+
+None
+2022-11-21 22:28:57.039803
+//Gabriel
+
+None
+2022-11-21 22:28:57.039822
+package main
+
+None
+2022-11-21 22:28:57.039853
+import "fmt"
+
+None
+2022-11-21 22:28:57.039882
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:28:57.040020
+//ANDREA
+
+None
+2022-11-21 22:28:57.040043
+x := 2
+
+None
+2022-11-21 22:28:57.040096
+var edad int
+
+None
+2022-11-21 22:28:57.040134
+var varname string = "andrea"
+
+None
+2022-11-21 22:28:57.040182
+sum := 0
+
+None
+2022-11-21 22:28:57.040229
+for i := 0; i < 10; i++ {sum += i}
+
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 32
+Error de sintaxis - Token: RIGHTKEY, Línea: 47, Col: 33
+None
+2022-11-21 22:28:57.040363
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:28:57.040472
+var myArray [10]int
+
+None
+2022-11-21 22:28:57.040602
+var student1 string = "John" 
+
+None
+2022-11-21 22:28:57.040658
+var student2 = "Jane" 
+None
+2022-11-21 22:28:57.040723
+//Eduardo
+
+None
+2022-11-21 22:34:56.058897
+//Condicionales
+
+None
+2022-11-21 22:34:56.058939
+if(x>2){x+2}
+
+None
+2022-11-21 22:34:56.059082
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:34:56.059238
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:34:56.059433
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:34:56.059650
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:34:56.060042
+
+
+None
+2022-11-21 22:34:56.060086
+//prints
+
+None
+2022-11-21 22:34:56.060109
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:34:56.060178
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:34:56.060243
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:34:56.060322
+
+
+None
+2022-11-21 22:34:56.060341
+//funciones
+
+None
+2022-11-21 22:34:56.060363
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:34:56.060460
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:34:56.060665
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:34:56.060774
+
+
+None
+2022-11-21 22:34:56.060794
+//Gabriel
+
+None
+2022-11-21 22:34:56.060815
+//For
+
+None
+2022-11-21 22:34:56.060835
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:34:56.060957
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:34:56.061228
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:34:56.061446
+//Switch
+
+None
+2022-11-21 22:34:56.061476
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:34:56.061584
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 45
+Error de sintaxis - Token: DEFAULT, Línea: 26, Col: 47
+Error de sintaxis - Token: COLON, Línea: 26, Col: 54
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 60
+None
+2022-11-21 22:34:56.061767
+//Maps
+
+None
+2022-11-21 22:34:56.061791
+paises := make(map[string]int)
+
+None
+2022-11-21 22:34:56.061871
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:34:56.061894
+paises["Italia"] = 30
+
+None
+2022-11-21 22:34:56.061952
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:34:56.062009
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:34:56.062075
+
+
+None
+2022-11-21 22:34:56.062097
+//Declaraciones
+
+None
+2022-11-21 22:34:56.062118
+var pais string
+
+None
+2022-11-21 22:34:56.062173
+var nume int
+
+None
+2022-11-21 22:34:56.062230
+
+
+None
+2022-11-21 22:34:56.062250
+//Gabriel
+
+None
+2022-11-21 22:34:56.062271
+package main
+
+None
+2022-11-21 22:34:56.062302
+import "fmt"
+
+None
+2022-11-21 22:34:56.062333
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:34:56.062544
+//ANDREA
+
+None
+2022-11-21 22:34:56.062592
+x := 2
+
+None
+2022-11-21 22:34:56.062666
+var edad int
+
+None
+2022-11-21 22:34:56.062716
+var varname string = "andrea"
+
+None
+2022-11-21 22:34:56.062767
+sum := 0
+
+None
+2022-11-21 22:34:56.062841
+for i := 0; i < 10; i++ {sum += i}
+
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 32
+Error de sintaxis - Token: RIGHTKEY, Línea: 47, Col: 33
+None
+2022-11-21 22:34:56.063017
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:34:56.063148
+var myArray [10]int
+
+None
+2022-11-21 22:34:56.063236
+var student1 string = "John" 
+
+None
+2022-11-21 22:34:56.063296
+var student2 = "Jane" 
+None
+2022-11-21 22:34:56.063352
+//Eduardo
+
+None
+2022-11-21 22:37:38.633622
+//Condicionales
+
+None
+2022-11-21 22:37:38.633673
+if(x>2){x+2}
+
+None
+2022-11-21 22:37:38.633814
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:37:38.633980
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:37:38.634169
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:37:38.634424
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:37:38.634791
+
+
+None
+2022-11-21 22:37:38.634826
+//prints
+
+None
+2022-11-21 22:37:38.634854
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:37:38.634941
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:37:38.635032
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:37:38.635141
+
+
+None
+2022-11-21 22:37:38.635172
+//funciones
+
+None
+2022-11-21 22:37:38.635203
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:37:38.635338
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:37:38.635510
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:37:38.635660
+
+
+None
+2022-11-21 22:37:38.635691
+//Gabriel
+
+None
+2022-11-21 22:37:38.635725
+//For
+
+None
+2022-11-21 22:37:38.635752
+for i:=0;i<=10;i++{sum++}
+
+Error de sintaxis - Token: INCREMENT, Línea: 21, Col: 16
+Error de sintaxis - Token: LEFTKEY, Línea: 21, Col: 18
+Error de sintaxis - Token: VARIABLE, Línea: 21, Col: 19
+Error de sintaxis - Token: INCREMENT, Línea: 21, Col: 22
+Error de sintaxis - Token: RIGHTKEY, Línea: 21, Col: 24
+None
+2022-11-21 22:37:38.635923
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+Error de sintaxis - Token: INCREMENT, Línea: 22, Col: 16
+Error de sintaxis - Token: LEFTKEY, Línea: 22, Col: 18
+Error de sintaxis - Token: FOR, Línea: 22, Col: 19
+Error de sintaxis - Token: VARIABLE, Línea: 22, Col: 23
+Error de sintaxis - Token: COLON, Línea: 22, Col: 24
+Error de sintaxis - Token: IGUAL, Línea: 22, Col: 25
+Error de sintaxis - Token: ENTERO, Línea: 22, Col: 26
+Error de sintaxis - Token: SEMICOLON, Línea: 22, Col: 27
+Error de sintaxis - Token: VARIABLE, Línea: 22, Col: 28
+Error de sintaxis - Token: LESSOREQUAL, Línea: 22, Col: 29
+Error de sintaxis - Token: ENTERO, Línea: 22, Col: 31
+Error de sintaxis - Token: SEMICOLON, Línea: 22, Col: 33
+Error de sintaxis - Token: VARIABLE, Línea: 22, Col: 34
+Error de sintaxis - Token: INCREMENT, Línea: 22, Col: 35
+Error de sintaxis - Token: LEFTKEY, Línea: 22, Col: 37
+Error de sintaxis - Token: VARIABLE, Línea: 22, Col: 38
+Error de sintaxis - Token: INCREMENT, Línea: 22, Col: 41
+Error de sintaxis - Token: RIGHTKEY, Línea: 22, Col: 43
+Error de sintaxis - Token: RIGHTKEY, Línea: 22, Col: 44
+None
+2022-11-21 22:37:38.636232
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+Error de sintaxis - Token: INCREMENT, Línea: 23, Col: 16
+Error de sintaxis - Token: LEFTKEY, Línea: 23, Col: 18
+Error de sintaxis - Token: IF, Línea: 23, Col: 19
+Error de sintaxis - Token: LPAREN, Línea: 23, Col: 21
+Error de sintaxis - Token: VARIABLE, Línea: 23, Col: 22
+Error de sintaxis - Token: GREATERTHAN, Línea: 23, Col: 23
+Error de sintaxis - Token: ENTERO, Línea: 23, Col: 24
+Error de sintaxis - Token: RPAREN, Línea: 23, Col: 25
+Error de sintaxis - Token: LEFTKEY, Línea: 23, Col: 26
+Error de sintaxis - Token: VARIABLE, Línea: 23, Col: 27
+Error de sintaxis - Token: RIGHTKEY, Línea: 23, Col: 30
+Error de sintaxis - Token: RIGHTKEY, Línea: 23, Col: 31
+None
+2022-11-21 22:37:38.636491
+//Switch
+
+None
+2022-11-21 22:37:38.636551
+switch os:=1; os{case 1: vari++}
+
+Error de sintaxis - Token: INCREMENT, Línea: 25, Col: 29
+Error de sintaxis - Token: RIGHTKEY, Línea: 25, Col: 31
+None
+2022-11-21 22:37:38.636699
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 29
+Error de sintaxis - Token: CASE, Línea: 26, Col: 32
+Error de sintaxis - Token: ENTERO, Línea: 26, Col: 37
+Error de sintaxis - Token: VARIABLE, Línea: 26, Col: 40
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 44
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 45
+Error de sintaxis - Token: DEFAULT, Línea: 26, Col: 47
+Error de sintaxis - Token: COLON, Línea: 26, Col: 54
+Error de sintaxis - Token: VARIABLE, Línea: 26, Col: 56
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 60
+Error de sintaxis - Token: RIGHTKEY, Línea: 26, Col: 62
+None
+2022-11-21 22:37:38.636933
+//Maps
+
+None
+2022-11-21 22:37:38.636969
+paises := make(map[string]int)
+
+None
+2022-11-21 22:37:38.637076
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:37:38.637108
+paises["Italia"] = 30
+
+None
+2022-11-21 22:37:38.637190
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:37:38.637270
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:37:38.637347
+
+
+None
+2022-11-21 22:37:38.637375
+//Declaraciones
+
+None
+2022-11-21 22:37:38.637405
+var pais string
+
+None
+2022-11-21 22:37:38.637458
+var nume int
+
+None
+2022-11-21 22:37:38.637508
+
+
+None
+2022-11-21 22:37:38.637532
+//Gabriel
+
+None
+2022-11-21 22:37:38.637570
+package main
+
+None
+2022-11-21 22:37:38.637613
+import "fmt"
+
+None
+2022-11-21 22:37:38.637657
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:37:38.637847
+//ANDREA
+
+None
+2022-11-21 22:37:38.637880
+x := 2
+
+None
+2022-11-21 22:37:38.637946
+var edad int
+
+None
+2022-11-21 22:37:38.637999
+var varname string = "andrea"
+
+None
+2022-11-21 22:37:38.638068
+sum := 0
+
+None
+2022-11-21 22:37:38.638131
+for i := 0; i < 10; i++ {sum += i}
+
+Error de sintaxis - Token: INCREMENT, Línea: 47, Col: 21
+Error de sintaxis - Token: LEFTKEY, Línea: 47, Col: 24
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 25
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 32
+Error de sintaxis - Token: RIGHTKEY, Línea: 47, Col: 33
+None
+2022-11-21 22:37:38.638313
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:37:38.638459
+var myArray [10]int
+
+None
+2022-11-21 22:37:38.638533
+var student1 string = "John" 
+
+None
+2022-11-21 22:37:38.638609
+var student2 = "Jane" 
+None
+2022-11-21 22:37:38.638685
+//Eduardo
+
+None
+2022-11-21 22:38:03.005860
+//Condicionales
+
+None
+2022-11-21 22:38:03.005900
+if(x>2){x+2}
+
+None
+2022-11-21 22:38:03.006032
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:38:03.006170
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:38:03.006329
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:38:03.006520
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:38:03.006781
+
+
+None
+2022-11-21 22:38:03.006803
+//prints
+
+None
+2022-11-21 22:38:03.006826
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:38:03.006896
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:38:03.006969
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:38:03.007058
+
+
+None
+2022-11-21 22:38:03.007080
+//funciones
+
+None
+2022-11-21 22:38:03.007102
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:38:03.007204
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:38:03.007332
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:38:03.007465
+
+
+None
+2022-11-21 22:38:03.007489
+//Gabriel
+
+None
+2022-11-21 22:38:03.007512
+//For
+
+None
+2022-11-21 22:38:03.007533
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:38:03.007664
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:38:03.007873
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:38:03.008079
+//Switch
+
+None
+2022-11-21 22:38:03.008113
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:38:03.008255
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 45
+Error de sintaxis - Token: DEFAULT, Línea: 26, Col: 47
+Error de sintaxis - Token: COLON, Línea: 26, Col: 54
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 60
+None
+2022-11-21 22:38:03.008451
+//Maps
+
+None
+2022-11-21 22:38:03.008477
+paises := make(map[string]int)
+
+None
+2022-11-21 22:38:03.008610
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:38:03.008638
+paises["Italia"] = 30
+
+None
+2022-11-21 22:38:03.008699
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:38:03.008770
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:38:03.008832
+
+
+None
+2022-11-21 22:38:03.008853
+//Declaraciones
+
+None
+2022-11-21 22:38:03.008875
+var pais string
+
+None
+2022-11-21 22:38:03.008913
+var nume int
+
+None
+2022-11-21 22:38:03.008951
+
+
+None
+2022-11-21 22:38:03.008969
+//Gabriel
+
+None
+2022-11-21 22:38:03.008991
+package main
+
+None
+2022-11-21 22:38:03.009022
+import "fmt"
+
+None
+2022-11-21 22:38:03.009062
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:38:03.009206
+//ANDREA
+
+None
+2022-11-21 22:38:03.009230
+x := 2
+
+None
+2022-11-21 22:38:03.009276
+var edad int
+
+None
+2022-11-21 22:38:03.009313
+var varname string = "andrea"
+
+None
+2022-11-21 22:38:03.009363
+sum := 0
+
+None
+2022-11-21 22:38:03.009410
+for i := 0; i < 10; i++ {sum += i}
+
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 32
+Error de sintaxis - Token: RIGHTKEY, Línea: 47, Col: 33
+None
+2022-11-21 22:38:03.009543
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:38:03.009655
+var myArray [10]int
+
+None
+2022-11-21 22:38:03.009711
+var student1 string = "John" 
+
+None
+2022-11-21 22:38:03.009762
+var student2 = "Jane" 
+None
+2022-11-21 22:38:03.009825
+//Eduardo
+
+None
+2022-11-21 22:39:37.154519
+//Condicionales
+
+None
+2022-11-21 22:39:37.154561
+if(x>2){x+2}
+
+None
+2022-11-21 22:39:37.154721
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:39:37.154879
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:39:37.155076
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:39:37.155318
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:39:37.155659
+
+
+None
+2022-11-21 22:39:37.155686
+//prints
+
+None
+2022-11-21 22:39:37.155712
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:39:37.155796
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:39:37.155878
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:39:37.155977
+
+
+None
+2022-11-21 22:39:37.156001
+//funciones
+
+None
+2022-11-21 22:39:37.156027
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:39:37.156153
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:39:37.156311
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:39:37.156443
+
+
+None
+2022-11-21 22:39:37.156467
+//Gabriel
+
+None
+2022-11-21 22:39:37.156517
+//For
+
+None
+2022-11-21 22:39:37.156548
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:39:37.156712
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:39:37.156965
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:39:37.157185
+//Switch
+
+None
+2022-11-21 22:39:37.157216
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:39:37.157353
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 45
+Error de sintaxis - Token: DEFAULT, Línea: 26, Col: 47
+Error de sintaxis - Token: COLON, Línea: 26, Col: 54
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 60
+None
+2022-11-21 22:39:37.157590
+//Maps
+
+None
+2022-11-21 22:39:37.157620
+paises := make(map[string]int)
+
+None
+2022-11-21 22:39:37.157720
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:39:37.157748
+paises["Italia"] = 30
+
+None
+2022-11-21 22:39:37.157820
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:39:37.157890
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:39:37.157960
+
+
+None
+2022-11-21 22:39:37.157985
+//Declaraciones
+
+None
+2022-11-21 22:39:37.158011
+var pais string
+
+None
+2022-11-21 22:39:37.158058
+var nume int
+
+None
+2022-11-21 22:39:37.158105
+
+
+None
+2022-11-21 22:39:37.158129
+//Gabriel
+
+None
+2022-11-21 22:39:37.158155
+package main
+
+None
+2022-11-21 22:39:37.158193
+import "fmt"
+
+None
+2022-11-21 22:39:37.158231
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:39:37.158406
+//ANDREA
+
+None
+2022-11-21 22:39:37.158435
+x := 2
+
+None
+2022-11-21 22:39:37.158492
+var edad int
+
+None
+2022-11-21 22:39:37.158538
+var varname string = "andrea"
+
+None
+2022-11-21 22:39:37.158607
+sum := 0
+
+None
+2022-11-21 22:39:37.158665
+for i := 0; i < 10; i++ {sum += i}
+
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 32
+Error de sintaxis - Token: RIGHTKEY, Línea: 47, Col: 33
+None
+2022-11-21 22:39:37.158827
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:39:37.158961
+var myArray [10]int
+
+None
+2022-11-21 22:39:37.159028
+var student1 string = "John" 
+
+None
+2022-11-21 22:39:37.159091
+var student2 = "Jane" 
+
+None
+2022-11-21 22:39:37.159145
+myslice := []int{}
+
+None
+2022-11-21 22:39:37.159227
+fmt.Println(len(myslice1))
+
+Error de sintaxis - Token: LEN, Línea: 53, Col: 12
+Error de sintaxis - Token: LPAREN, Línea: 53, Col: 15
+Error de sintaxis - Token: RPAREN, Línea: 53, Col: 25
+None
+2022-11-21 22:39:37.159319
+fmt.Println(cap(myslice1))
+Error de sintaxis - Token: CAP, Línea: 54, Col: 12
+Error de sintaxis - Token: LPAREN, Línea: 54, Col: 15
+Error de sintaxis - Token: RPAREN, Línea: 54, Col: 25
+None
+2022-11-21 22:39:37.159428
+//Eduardo
+
+None
+2022-11-21 22:40:04.202364
+//Condicionales
+
+None
+2022-11-21 22:40:04.202411
+if(x>2){x+2}
+
+None
+2022-11-21 22:40:04.202561
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:40:04.202709
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:40:04.202919
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:40:04.203134
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:40:04.203477
+
+
+None
+2022-11-21 22:40:04.203513
+//prints
+
+None
+2022-11-21 22:40:04.203549
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:40:04.203648
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:40:04.203729
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:40:04.203808
+
+
+None
+2022-11-21 22:40:04.203827
+//funciones
+
+None
+2022-11-21 22:40:04.203848
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:40:04.203965
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:40:04.204149
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:40:04.204270
+
+
+None
+2022-11-21 22:40:04.204290
+//Gabriel
+
+None
+2022-11-21 22:40:04.204311
+//For
+
+None
+2022-11-21 22:40:04.204338
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:40:04.204597
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:40:04.204861
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:40:04.205048
+//Switch
+
+None
+2022-11-21 22:40:04.205082
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:40:04.205226
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 45
+Error de sintaxis - Token: DEFAULT, Línea: 26, Col: 47
+Error de sintaxis - Token: COLON, Línea: 26, Col: 54
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 60
+None
+2022-11-21 22:40:04.205423
+//Maps
+
+None
+2022-11-21 22:40:04.205462
+paises := make(map[string]int)
+
+None
+2022-11-21 22:40:04.205573
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:40:04.205609
+paises["Italia"] = 30
+
+None
+2022-11-21 22:40:04.205689
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:40:04.205770
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:40:04.205849
+
+
+None
+2022-11-21 22:40:04.205878
+//Declaraciones
+
+None
+2022-11-21 22:40:04.205910
+var pais string
+
+None
+2022-11-21 22:40:04.205962
+var nume int
+
+None
+2022-11-21 22:40:04.206003
+
+
+None
+2022-11-21 22:40:04.206021
+//Gabriel
+
+None
+2022-11-21 22:40:04.206042
+package main
+
+None
+2022-11-21 22:40:04.206081
+import "fmt"
+
+None
+2022-11-21 22:40:04.206115
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:40:04.206261
+//ANDREA
+
+None
+2022-11-21 22:40:04.206284
+x := 2
+
+None
+2022-11-21 22:40:04.206330
+var edad int
+
+None
+2022-11-21 22:40:04.206383
+var varname string = "andrea"
+
+None
+2022-11-21 22:40:04.206463
+sum := 0
+
+None
+2022-11-21 22:40:04.206530
+for i := 0; i < 10; i++ {sum += i}
+
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 32
+Error de sintaxis - Token: RIGHTKEY, Línea: 47, Col: 33
+None
+2022-11-21 22:40:04.206698
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:40:04.206819
+var myArray [10]int
+
+None
+2022-11-21 22:40:04.206898
+var student1 string = "John" 
+
+None
+2022-11-21 22:40:04.206965
+var student2 = "Jane" 
+
+None
+2022-11-21 22:40:04.207010
+myslice := []int{}
+
+None
+2022-11-21 22:40:04.207085
+len(myslice1)
+
+None
+2022-11-21 22:40:04.207125
+cap(myslice1)
+None
+2022-11-21 22:40:04.207203
+//Eduardo
+
+None
+2022-11-21 22:42:04.626355
+//Condicionales
+
+None
+2022-11-21 22:42:04.626403
+if(x>2){x+2}
+
+None
+2022-11-21 22:42:04.626613
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:42:04.626794
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:42:04.627036
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:42:04.627253
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:42:04.627610
+
+
+None
+2022-11-21 22:42:04.627638
+//prints
+
+None
+2022-11-21 22:42:04.627663
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:42:04.627749
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:42:04.627839
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:42:04.627952
+
+
+None
+2022-11-21 22:42:04.627983
+//funciones
+
+None
+2022-11-21 22:42:04.628029
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:42:04.628149
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:42:04.628338
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:42:04.628619
+
+
+None
+2022-11-21 22:42:04.628668
+//Gabriel
+
+None
+2022-11-21 22:42:04.628699
+//For
+
+None
+2022-11-21 22:42:04.628726
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:42:04.628908
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:42:04.629225
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:42:04.629441
+//Switch
+
+None
+2022-11-21 22:42:04.629480
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:42:04.629641
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 45
+Error de sintaxis - Token: DEFAULT, Línea: 26, Col: 47
+Error de sintaxis - Token: COLON, Línea: 26, Col: 54
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 60
+None
+2022-11-21 22:42:04.629935
+//Maps
+
+None
+2022-11-21 22:42:04.629974
+paises := make(map[string]int)
+
+None
+2022-11-21 22:42:04.630087
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:42:04.630122
+paises["Italia"] = 30
+
+None
+2022-11-21 22:42:04.630200
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:42:04.630268
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:42:04.630324
+
+
+None
+2022-11-21 22:42:04.630342
+//Declaraciones
+
+None
+2022-11-21 22:42:04.630363
+var pais string
+
+None
+2022-11-21 22:42:04.630406
+var nume int
+
+None
+2022-11-21 22:42:04.630455
+
+
+None
+2022-11-21 22:42:04.630482
+//Gabriel
+
+None
+2022-11-21 22:42:04.630511
+package main
+
+None
+2022-11-21 22:42:04.630553
+import "fmt"
+
+None
+2022-11-21 22:42:04.630610
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:42:04.630781
+//ANDREA
+
+None
+2022-11-21 22:42:04.630808
+x := 2
+
+None
+2022-11-21 22:42:04.630855
+var edad int
+
+None
+2022-11-21 22:42:04.630897
+var varname string = "andrea"
+
+None
+2022-11-21 22:42:04.630965
+sum := 0
+
+None
+2022-11-21 22:42:04.631034
+for i:=0;i<10;i++{sum += i}
+
+Error de sintaxis - Token: VARIABLE, Línea: 47, Col: 25
+Error de sintaxis - Token: RIGHTKEY, Línea: 47, Col: 26
+None
+2022-11-21 22:42:04.631215
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:42:04.631367
+var myArray [10]int
+
+None
+2022-11-21 22:42:04.631440
+var student1 string = "John" 
+
+None
+2022-11-21 22:42:04.631490
+var student2 = "Jane" 
+
+None
+2022-11-21 22:42:04.631532
+myslice := []int{}
+
+None
+2022-11-21 22:42:04.631619
+len(myslice1)
+
+None
+2022-11-21 22:42:04.631666
+cap(myslice1)
+None
+2022-11-21 22:42:04.631734
+//Eduardo
+
+None
+2022-11-21 22:46:01.131096
+//Condicionales
+
+None
+2022-11-21 22:46:01.131146
+if(x>2){x+2}
+
+None
+2022-11-21 22:46:01.131295
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:46:01.131463
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:46:01.131684
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:46:01.131890
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:46:01.132183
+
+
+None
+2022-11-21 22:46:01.132207
+//prints
+
+None
+2022-11-21 22:46:01.132229
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:46:01.132301
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:46:01.132368
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:46:01.132450
+
+
+None
+2022-11-21 22:46:01.132470
+//funciones
+
+None
+2022-11-21 22:46:01.132491
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:46:01.132643
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:46:01.132782
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:46:01.132893
+
+
+None
+2022-11-21 22:46:01.132915
+//Gabriel
+
+None
+2022-11-21 22:46:01.132936
+//For
+
+None
+2022-11-21 22:46:01.132956
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:46:01.133094
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:46:01.133304
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:46:01.133487
+//Switch
+
+None
+2022-11-21 22:46:01.133515
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:46:01.133630
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+Error de sintaxis - Token: MINUS, Línea: 26, Col: 45
+Error de sintaxis - Token: DEFAULT, Línea: 26, Col: 47
+Error de sintaxis - Token: COLON, Línea: 26, Col: 54
+Error de sintaxis - Token: INCREMENT, Línea: 26, Col: 60
+None
+2022-11-21 22:46:01.133821
+//Maps
+
+None
+2022-11-21 22:46:01.133845
+paises := make(map[string]int)
+
+None
+2022-11-21 22:46:01.133929
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:46:01.133953
+paises["Italia"] = 30
+
+None
+2022-11-21 22:46:01.134012
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:46:01.134075
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:46:01.134140
+
+
+None
+2022-11-21 22:46:01.134163
+//Declaraciones
+
+None
+2022-11-21 22:46:01.134185
+var pais string
+
+None
+2022-11-21 22:46:01.134225
+var nume int
+
+None
+2022-11-21 22:46:01.134263
+
+
+None
+2022-11-21 22:46:01.134282
+//Gabriel
+
+None
+2022-11-21 22:46:01.134303
+package main
+
+None
+2022-11-21 22:46:01.134335
+import "fmt"
+
+None
+2022-11-21 22:46:01.134366
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:46:01.134510
+//ANDREA
+
+None
+2022-11-21 22:46:01.134534
+x := 2
+
+None
+2022-11-21 22:46:01.134581
+var edad int
+
+None
+2022-11-21 22:46:01.134618
+var varname string = "andrea"
+
+None
+2022-11-21 22:46:01.134669
+sum := 0
+
+None
+2022-11-21 22:46:01.134717
+for i:=0;i<10;i++{sum += i}
+
+None
+2022-11-21 22:46:01.134855
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:46:01.134974
+var myArray [10]int
+
+None
+2022-11-21 22:46:01.135032
+var student1 string = "John" 
+
+None
+2022-11-21 22:46:01.135091
+var student2 = "Jane" 
+
+None
+2022-11-21 22:46:01.135135
+myslice := []int{}
+
+None
+2022-11-21 22:46:01.135202
+len(myslice1)
+
+None
+2022-11-21 22:46:01.135244
+cap(myslice1)
+None
+2022-11-21 22:46:01.135302
+//Eduardo
+
+None
+2022-11-21 22:47:27.965897
+//Condicionales
+
+None
+2022-11-21 22:47:27.965933
+if(x>2){x+2}
+
+None
+2022-11-21 22:47:27.966142
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 22:47:27.966266
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 22:47:27.966420
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 22:47:27.966605
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 22:47:27.966855
+
+
+None
+2022-11-21 22:47:27.966875
+//prints
+
+None
+2022-11-21 22:47:27.966896
+fmt.Println(x, "World")
+
+None
+2022-11-21 22:47:27.966961
+fmt.Println("Hello", y)
+
+None
+2022-11-21 22:47:27.967025
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 22:47:27.967120
+
+
+None
+2022-11-21 22:47:27.967145
+//funciones
+
+None
+2022-11-21 22:47:27.967171
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 22:47:27.967291
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 22:47:27.967528
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 22:47:27.967633
+
+
+None
+2022-11-21 22:47:27.967653
+//Gabriel
+
+None
+2022-11-21 22:47:27.967674
+//For
+
+None
+2022-11-21 22:47:27.967695
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 22:47:27.967876
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 22:47:27.968108
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 22:47:27.968278
+//Switch
+
+None
+2022-11-21 22:47:27.968303
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 22:47:27.968409
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+None
+2022-11-21 22:47:27.968608
+//Maps
+
+None
+2022-11-21 22:47:27.968636
+paises := make(map[string]int)
+
+None
+2022-11-21 22:47:27.968714
+//Agregar elementos a mapa
+
+None
+2022-11-21 22:47:27.968736
+paises["Italia"] = 30
+
+None
+2022-11-21 22:47:27.968792
+paises["Mexico"] = 31
+
+None
+2022-11-21 22:47:27.968847
+paises["Colombia"] = 32
+
+None
+2022-11-21 22:47:27.968901
+
+
+None
+2022-11-21 22:47:27.968919
+//Declaraciones
+
+None
+2022-11-21 22:47:27.968939
+var pais string
+
+None
+2022-11-21 22:47:27.968974
+var nume int
+
+None
+2022-11-21 22:47:27.969009
+
+
+None
+2022-11-21 22:47:27.969027
+//Gabriel
+
+None
+2022-11-21 22:47:27.969046
+package main
+
+None
+2022-11-21 22:47:27.969084
+import "fmt"
+
+None
+2022-11-21 22:47:27.969114
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 22:47:27.969248
+//ANDREA
+
+None
+2022-11-21 22:47:27.969270
+x := 2
+
+None
+2022-11-21 22:47:27.969316
+var edad int
+
+None
+2022-11-21 22:47:27.969351
+var varname string = "andrea"
+
+None
+2022-11-21 22:47:27.969398
+sum := 0
+
+None
+2022-11-21 22:47:27.969442
+for i:=0;i<10;i++{sum += i}
+
+None
+2022-11-21 22:47:27.969589
+myslice := []int{1,2,3}
+
+None
+2022-11-21 22:47:27.969714
+var myArray [10]int
+
+None
+2022-11-21 22:47:27.969764
+var student1 string = "John" 
+
+None
+2022-11-21 22:47:27.969812
+var student2 = "Jane" 
+
+None
+2022-11-21 22:47:27.969882
+myslice := []int{}
+
+None
+2022-11-21 22:47:27.969959
+len(myslice1)
+
+None
+2022-11-21 22:47:27.969997
+cap(myslice1)
+None
+2022-11-21 22:47:27.970046
+
+//Eduardo
+
+None
+2022-11-21 17:52:47.948469
+//Condicionales
+
+None
+2022-11-21 17:52:47.948469
+if(x>2){x+2}
+
+None
+2022-11-21 17:52:47.949506
+if(x>2){x+2} else {x-8}
+
+None
+2022-11-21 17:52:47.949506
+if(x>2){x-2} else if (x<3) {x-3} 
+
+None
+2022-11-21 17:52:47.949506
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+
+None
+2022-11-21 17:52:47.949506
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+None
+2022-11-21 17:52:47.949506
+
+
+None
+2022-11-21 17:52:47.949506
+//prints
+
+None
+2022-11-21 17:52:47.949506
+fmt.Println(x, "World")
+
+None
+2022-11-21 17:52:47.949506
+fmt.Println("Hello", y)
+
+None
+2022-11-21 17:52:47.949506
+fmt.Println("World", y, "Hello World")
+
+None
+2022-11-21 17:52:47.949506
+
+
+None
+2022-11-21 17:52:47.949506
+//funciones
+
+None
+2022-11-21 17:52:47.949506
+func hola2()(int32){x+1 return a}
+
+None
+2022-11-21 17:52:47.949506
+func hola2()(int32,int64){x+1 return a,b}
+
+None
+2022-11-21 17:52:47.949506
+func hola2(var1 string)(int32, int64){return a}
+
+None
+2022-11-21 17:52:47.949506
+
+
+None
+2022-11-21 17:52:47.949506
+//Gabriel
+
+None
+2022-11-21 17:52:47.949506
+//For
+
+None
+2022-11-21 17:52:47.949506
+for i:=0;i<=10;i++{sum++}
+
+None
+2022-11-21 17:52:47.949506
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+
+None
+2022-11-21 17:52:47.949506
+for i:=0;i<=10;i++{if(x>2){x+2}}
+
+None
+2022-11-21 17:52:47.950578
+//Switch
+
+None
+2022-11-21 17:52:47.950578
+switch os:=1; os{case 1: vari++}
+
+None
+2022-11-21 17:52:47.950578
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+
+None
+2022-11-21 17:52:47.950578
+//Maps
+
+None
+2022-11-21 17:52:47.950578
+paises := make(map[string]int)
+
+None
+2022-11-21 17:52:47.950578
+//Agregar elementos a mapa
+
+None
+2022-11-21 17:52:47.950578
+paises["Italia"] = 30
+
+None
+2022-11-21 17:52:47.950578
+paises["Mexico"] = 31
+
+None
+2022-11-21 17:52:47.950578
+paises["Colombia"] = 32
+
+None
+2022-11-21 17:52:47.950578
+
+
+None
+2022-11-21 17:52:47.950578
+//Declaraciones
+
+None
+2022-11-21 17:52:47.950578
+var pais string
+
+None
+2022-11-21 17:52:47.950578
+var nume int
+
+None
+2022-11-21 17:52:47.950578
+
+
+None
+2022-11-21 17:52:47.950578
+//Gabriel
+
+None
+2022-11-21 17:52:47.950578
+package main
+
+None
+2022-11-21 17:52:47.950578
+import "fmt"
+
+None
+2022-11-21 17:52:47.950578
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
+
+None
+2022-11-21 17:52:47.950578
+//ANDREA
+
+None
+2022-11-21 17:52:47.950578
+x := 2
+
+None
+2022-11-21 17:52:47.950578
+var edad int
+
+None
+2022-11-21 17:52:47.950578
+var varname string = "andrea"
+
+None
+2022-11-21 17:52:47.950578
+sum := 0
+
+None
+2022-11-21 17:52:47.950578
+for i:=0;i<10;i++{sum += i}
+
+None
+2022-11-21 17:52:47.950578
+myslice := []int{1,2,3}
+
+None
+2022-11-21 17:52:47.950578
+var myArray [10]int
+
+None
+2022-11-21 17:52:47.950578
+var student1 string = "John" 
+
+None
+2022-11-21 17:52:47.950578
+var student2 = "Jane" 
+
+None
+2022-11-21 17:52:47.950578
+myslice := []int{}
+
+None
+2022-11-21 17:52:47.950578
+len(myslice1)
+
+None
+2022-11-21 17:52:47.950578
+cap(myslice1)
+None
+2022-11-21 17:52:47.950578

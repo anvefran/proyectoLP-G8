@@ -1,74 +1,54 @@
+//Eduardo
+//Condicionales
+if(x>2){x+2}
+if(x>2){x+2} else {x-8}
+if(x>2){x-2} else if (x<3) {x-3} 
+if(x>2){x-2} else if (x<3) {x-3}  else {x-8}
+if(x>2){x-2} else if (x<3) {x-3} else if (x<4) {x-4} else {x-1}
+
+//prints
+fmt.Println(x, "World")
+fmt.Println("Hello", y)
+fmt.Println("World", y, "Hello World")
+
+//funciones
+func hola2()(int32){x+1 return a}
+func hola2()(int32,int64){x+1 return a,b}
+func hola2(var1 string)(int32, int64){return a}
+
+//Gabriel
+//For
+for i:=0;i<=10;i++{sum++}
+for i:=0;i<=10;i++{for j:=0;j<=10;j++{sum++}}
+for i:=0;i<=10;i++{if(x>2){x+2}}
+//Switch
+switch os:=1; os{case 1: vari++}
+switch os:=1; os{case 1: vari++ case 2: vari-- default: vari++}
+//Maps
+paises := make(map[string]int)
+//Agregar elementos a mapa
+paises["Italia"] = 30
+paises["Mexico"] = 31
+paises["Colombia"] = 32
+
+//Declaraciones
+var pais string
+var nume int
+
 //Gabriel
 package main
 import "fmt"
-func main() {
-    if 7%2 == 0 {
-        fmt.Println("7 es impar")
-    } else {
-        fmt.Println("7 es par")
-    }
-    if 8%4 == 0 {
-        fmt.Println("8 es divisible para 4")
-    }
-
-		if 8 != 7{
-				fmt.Println("8 es distinto de 7")
-		}
-
-    if num := 9; num < 0 {
-        fmt.Println(num, "es negativo")
-    } else if num < 10 {
-        fmt.Println(num, "tiene 1 digito")
-    } else {
-        fmt.Println(num, "tiene muchos digitos")
-    }
-}
+if a == 0 {fmt.Println("7 es impar")} else {fmt.Println("7 es par")}
 //ANDREA
 x := 2
 var edad int
 var varname string = "andrea"
 sum := 0
-for i := 0; i < 10; i++ {
-sum += i
-}
-fmt.Println(sum)
-
-switch (expresion) {
-case x:
- //code
-case y:
- //code
-default:
- //code
-}
-if (condition) {
- //code
-} else if (condition2){
- //optional
-} else {
- //else code
-}
-paises := make(map[string]int)
-//agregar algunas entradas
-paises["Italia"] = 30
-paises["Mexico"] = 20
-paises["Colombia"] = 40
+for i:=0;i<10;i++{sum += i}
 myslice := []int{1,2,3}
 var myArray [10]int
-//inicializacion
-for i := 0; i <= 100; i+=1{
- myArray[i] = i + 1
-}
-package main
-import ("fmt")
-func main() {
-  var a string
-  var b int
-  var c bool
-  fmt.Println(a)
-  fmt.Println(b)
-  fmt.Println(c)
-}
 var student1 string = "John" 
 var student2 = "Jane" 
-const PI = 3.14
+myslice := []int{}
+len(myslice1)
+cap(myslice1)

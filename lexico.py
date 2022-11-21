@@ -1,4 +1,3 @@
-
 import ply.lex as lex
 
 reservado = {
@@ -125,7 +124,7 @@ t_OR = r'\|\|'
 t_NOT = r'!'
 t_INCREMENT = r'\+\+'
 t_DECREMENT = r'\-\-'
-t_MODULUS = r'\%'
+t_MODULUS = r'%'
 t_GREATEROREQUAL = r'>='
 t_LESSOREQUAL = r'<='
 t_LEFTKEY = r'\{'
@@ -199,13 +198,9 @@ lexer = lex.lex()
 def getTokens(lexer):
   for tok in lexer:
     print(tok)
-
-
 file = open("source.txt")
-
 #EDUARDO
 for line in file:
   lexer.input(line)
   getTokens(lexer)
-
 """
