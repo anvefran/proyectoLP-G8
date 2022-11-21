@@ -22,7 +22,7 @@ def p_cuerpo(p):
 #DECLARACIONES
 def p_asignacion(p):
   'asignacion : VARIABLE COLON IGUAL valor'
-
+#Gabriel y Eduardo
 def p_declaracion(p):
   '''declaracion : VAR VARIABLE datatype SEMICOLON
   | VAR VARIABLE datatype IGUAL valor
@@ -103,7 +103,7 @@ def p_conditional_structure(p):
   
   '''
 
-
+#Gabriel y Eduardo
 def p_elif_structure(p):
 
   '''elif_structure : ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
@@ -113,7 +113,7 @@ def p_elif_structure(p):
 def p_conditional_block(p):
   'conditional_block : cuerpo'
 
-
+#Gabriel
 def p_cuerposwitchin(p):
 	'''cuerposwitchin : CASE valor COLON cuerpo
  | DEFAULT COLON cuerpo
@@ -147,7 +147,7 @@ def p_elementos(p):
   | valor COMMA elementos
   | VARIABLE COMMA elementos
   '''
-
+#Gabriel
 def p_maps(p):
 	'''maps : VARIABLE COLON IGUAL MAKE LPAREN MAP LCOR datatype RCOR datatype RPAREN
  	'''
@@ -171,10 +171,12 @@ def p_sliceMethods(p):
 
 
 #funciones imprimir y entrada de datos
+#Gabriel y Andrea
 def p_impresion(p):
   '''impresion : FMT DOT PRINT LPAREN elementos RPAREN
-  | FUNC PRINTLN LPAREN elementos RPAREN
+  | FUNCTION PRINTLN LPAREN elementos RPAREN
   '''
+#Gabriel
 def p_input(p):
   '''input : FMT DOT SCANF LPAREN datatype COMMA VARIABLE RPAREN
   '''
