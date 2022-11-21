@@ -12,6 +12,7 @@ def p_cuerpo(p):
   | impresion
   | declaracion
   | conditional_structure
+  | arrays
   '''
 
 
@@ -20,11 +21,11 @@ def p_asignacion(p):
   'asignacion : VARIABLE COLON IGUAL valor'
 
 def p_declaracion(p):
-  'declaracion : VAR VARIABLE tipo IGUAL valor' 
+  'declaracion : VAR VARIABLE datatype IGUAL valor' 
 
 #tipos de datos
-def p_tipo(p):
-  '''tipo : INT32
+def p_datatype(p):
+  '''datatype : INT32
   | BYTE
   | UINT
   | STRING
@@ -39,7 +40,8 @@ def p_tipo(p):
   | UINT8
   | UINT16
   | UINT32
-  | UINT64'''
+  | UINT64
+  | BOOL'''
 
 #Posibles asignaciones para una variable
 def p_valor(p):
@@ -89,12 +91,14 @@ def p_operadorCmp(p):
 def p_conditional_structure(p):
   '''conditional_structure : IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
   | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
-  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
-  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure ELSE LEFTKEY conditional_block RIGHTKEY'''
+  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY'''
+
 
 def p_elif_structure(p):
+
   '''elif_structure : ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
-  | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure'''
+  | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
+  | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY'''
 
 #El contenido de un bloque condicional
 def p_conditional_block(p):
@@ -107,19 +111,8 @@ def p_slice(p):
   | VARIABLE COLON IGUAL LCOR RCOR datatype LEFTKEY RIGHTKEY
   '''
 
-
-def p_datatype(p):
-  '''datatype : STRING
-  | INTEGER
-  | BOOL
-  | INT32
-  | UINT
-  | INT8
-  | INT16
-  | INT64
-  | FLOAT16
-  | FLOAT32
-  '''
+def p_arrays(p):
+  'arrays : VAR VARIABLE LCOR ENTERO RCOR datatype'
 
 
 def p_elementos(p):
@@ -143,6 +136,8 @@ def p_sliceMethods(p):
 #funciones imprimir y entrada de datos
 def p_impresion(p):
   '''impresion : FMT DOT PRINT LPAREN elementos RPAREN'''
+
+
 
 
 #ESTRUCTURAS DE CONTROL:Tienen reglas sintácticas para selección y repetición. Se pueden anidar, agregar al cuerpo otras reglas.
