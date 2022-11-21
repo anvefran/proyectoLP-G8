@@ -2,7 +2,7 @@ import ply.yacc as yacc
 from lexico import tokens
 
 
-#CUERPO
+#CUERPO (Andrea-Gabriel-Eduardo)
 def p_cuerpo(p):
   '''cuerpo : asignacion
   | operacion
@@ -16,6 +16,8 @@ def p_cuerpo(p):
 	| maps
   | mapelem
   | input
+  | impresionln
+  | funcion
   '''
 
 
@@ -28,7 +30,7 @@ def p_declaracion(p):
   | VAR VARIABLE datatype IGUAL valor
   ''' 
 
-#tipos de datos
+#tipos de datos - Eduardo
 def p_datatype(p):
   '''datatype : INT32
   | BYTE
@@ -48,15 +50,14 @@ def p_datatype(p):
   | UINT64
   | BOOL'''
 
-#Posibles asignaciones para una variable
+#Posibles asignaciones para una variable - Andrea
 def p_valor(p):
   '''valor : ENTERO
   | FLOAT
   | STR '''
 
 
-#EXPRESIONES: operaciones y comparaciones
-#faltan las opciones de que sea 2+variable o 2+2
+#EXPRESIONES: operaciones y comparaciones - Andrea
 def p_operacion(p):
   '''operacion : VARIABLE operadorOp VARIABLE
   | VARIABLE incDec 
@@ -93,22 +94,20 @@ def p_operadorCmp(p):
   '''
 
 #ESTRUCTURAS DE CONTROL
+#Gabriel y Eduardo
 def p_conditional_structure(p):
   '''conditional_structure : IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
   | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
   | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
   | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY forbody RIGHTKEY
-  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitch RIGHTKEY
-  
-  
-  '''
+  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitch RIGHTKEY'''
 
 #Gabriel y Eduardo
 def p_elif_structure(p):
-
   '''elif_structure : ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
   | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
   | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY'''
+
 #El contenido de un bloque condicional
 def p_conditional_block(p):
   'conditional_block : cuerpo'
@@ -165,10 +164,34 @@ def p_sliceMethods(p):
   '''
 
 
+#Funciones - Eduardo Salavarría
+#1er caso: funciones sin argumentos, sin retornos "func variable()(){body}"
+#2do caso: con retorno sin argumentos
+#3er caso: sin retorno con n argumentos
+#4to caso: con retorno, con argumentos
+#Psdt: en el mismo sintáctico se valida que la función retorne un elemento en caso que haya sido declarado como función con elementos de retorno
 
+def p_funcion(p):
+  '''funcion : FUNCTION VARIABLE LPAREN RPAREN LPAREN RPAREN LEFTKEY cuerpo RIGHTKEY
+  | FUNCTION VARIABLE  LPAREN  RPAREN LPAREN freturns RPAREN LEFTKEY fbody_wreturn RIGHTKEY
+  | FUNCTION VARIABLE  LPAREN  farguments RPAREN LPAREN RPAREN LEFTKEY cuerpo RIGHTKEY
+  | FUNCTION VARIABLE  LPAREN  farguments RPAREN LPAREN freturns RPAREN LEFTKEY fbody_wreturn RIGHTKEY'''
 
-#FUNCIONES declaracion
+#funcion que apoya a "funcion"  declara funciones single-argument y multiple-argument
+def p_farguments(p):
+  '''farguments : VARIABLE datatype
+  | VARIABLE datatype COMMA farguments'''
 
+#función de apoyo a "funcion" permite que las funciones tenga uno o múltiple retornos
+def p_freturns(p):
+  '''freturns : datatype
+  | datatype COMMA freturns'''
+
+#cuerpo de la función con retorno (debe tener una linea return a, b, ...)
+def p_fbody_wreturn(p):
+  '''fbody_wreturn : cuerpo RETURN VARIABLE
+  | cuerpo RETURN elementos
+  | RETURN elementos'''
 
 #funciones imprimir y entrada de datos
 #Gabriel y Andrea
@@ -181,6 +204,27 @@ def p_input(p):
   '''input : FMT DOT SCANF LPAREN datatype COMMA VARIABLE RPAREN
   '''
 
+#Eduardo
+#Método para mostrar en pantalla (Coloca un salto de línea al final de la cadena de caracteres)
+def p_impresionln(p):
+  '''impresionln : FMT DOT PRINTLN LPAREN impresion_content RPAREN'''
+
+#Contiene el contenido de la función print fmt.Println(content)
+#El contenido de la impresión puede ser:
+# fmt.Println(x, “String”)
+# fmt.Println(“String”, y)
+# fmt.Println(“String”, y, “String”)
+# fmt.Println("String", "String", y)
+def p_impresion_content(p):
+  '''impresion_content : impresion_type
+  | impresion_type COMMA impresion_type
+  | impresion_type COMMA impresion_type COMMA impresion_content'''
+
+
+#Para reducir el número de operaciones OR en impresion_content
+def p_impresion_type(p):
+  '''impresion_type : VARIABLE
+  | STR'''
 
 
 #ESTRUCTURAS DE CONTROL:Tienen reglas sintácticas para selección y repetición. Se pueden anidar, agregar al cuerpo otras reglas.
