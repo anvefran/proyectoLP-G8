@@ -15,6 +15,7 @@ def p_cuerpo(p):
   | arrays
 	| maps
   | mapelem
+  | input
   '''
 
 
@@ -171,8 +172,12 @@ def p_sliceMethods(p):
 
 #funciones imprimir y entrada de datos
 def p_impresion(p):
-  '''impresion : FMT DOT PRINT LPAREN elementos RPAREN'''
-
+  '''impresion : FMT DOT PRINT LPAREN elementos RPAREN
+  | FUNC PRINTLN LPAREN elementos RPAREN
+  '''
+def p_input(p):
+  '''input : FMT DOT SCANF LPAREN datatype COMMA VARIABLE RPAREN
+  '''
 
 
 
