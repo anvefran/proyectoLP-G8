@@ -21,7 +21,9 @@ def p_asignacion(p):
   'asignacion : VARIABLE COLON IGUAL valor'
 
 def p_declaracion(p):
-  'declaracion : VAR VARIABLE datatype IGUAL valor' 
+  '''declaracion : VAR VARIABLE datatype SEMICOLON
+  | VAR VARIABLE datatype IGUAL valor
+  ''' 
 
 #tipos de datos
 def p_datatype(p):
@@ -91,7 +93,12 @@ def p_operadorCmp(p):
 def p_conditional_structure(p):
   '''conditional_structure : IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
   | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
-  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY'''
+  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
+  | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY forbody RIGHTKEY
+  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitch RIGHTKEY
+  
+  
+  '''
 
 
 def p_elif_structure(p):
@@ -99,10 +106,26 @@ def p_elif_structure(p):
   '''elif_structure : ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
   | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
   | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY'''
-
 #El contenido de un bloque condicional
 def p_conditional_block(p):
   'conditional_block : cuerpo'
+
+
+def p_cuerposwitchin(p):
+	'''cuerposwitchin : CASE valor COLON cuerpo
+ | DEFAULT COLON cuerpo
+ '''
+
+def p_cuerposwitch(p):
+	'''cuerposwitch : cuerposwitchin
+ | cuerposwitchin cuerposwitchin
+ | cuerposwitchin cuerposwitchin cuerposwitchin
+ '''
+
+def p_forbody(p):
+	'''forbody : cuerpo
+ | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY cuerpo RIGHTKEY
+ '''
 
 
 #ESTRUCTURAS DE DATOS: reglas sintácticas para declarar estructuras, es posible invocar a sus métodos.
