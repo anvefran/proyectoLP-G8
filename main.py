@@ -13,6 +13,8 @@ def p_cuerpo(p):
   | declaracion
   | conditional_structure
   | arrays
+	| maps
+  | mapelem
   '''
 
 
@@ -145,12 +147,23 @@ def p_elementos(p):
   | VARIABLE COMMA elementos
   '''
 
+def p_maps(p):
+	'''maps : VARIABLE COLON IGUAL MAKE LPAREN MAP LCOR datatype RCOR datatype RPAREN
+ 	'''
+
+def p_mapelem(p):
+	'''mapelem : VARIABLE LCOR valor RCOR
+ | VARIABLE LCOR valor RCOR IGUAL valor
+ '''
+
 
 #slice metodos para hallar la longitud y capacidad de un slice
 def p_sliceMethods(p):
   '''sliceMethods  : LEN LPAREN VARIABLE RPAREN
   | CAP LPAREN VARIABLE RPAREN
   '''
+
+
 
 
 #FUNCIONES declaracion
