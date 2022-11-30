@@ -175,7 +175,7 @@ def t_VARIABLE(t):
 #EDUARDO
 #Agregue conteo de lineas
 def t_newline(t):
-  r'[ \t\r\n]+'
+  r'\n+'
   t.lexer.lineno += len(t.value)
 
 
@@ -190,11 +190,13 @@ def t_COMMENTS(t):
 def t_error(t):
   print("Caracter no permitido '%s'" % t.value[0])
   t.lexer.skip(1)
-
+t_ignore  = ' \t'
 #Gabriel
 lexer = lex.lex()
 
 def getTokens(lexer):
+  listatok = []
   for tok in lexer:
-    print(tok)
-
+    listatok.append(tok)
+  lexer.lineno = 1
+  return listatok

@@ -39,6 +39,7 @@ def abrir_archivo(nomarch):
     write_result("Codigo cargado y listo para analizar.")
     text_arear.config(state='disabled')
 
+#Andrea
 def borrar_contenido():
     text_area.delete('1.0',tk.END)
     text_arear.config(state='normal')
@@ -83,8 +84,11 @@ def lexer():
     import lexico as lx
     lx.lexer.input(datos_parse)
     ltok = lx.getTokens(lx.lexer)
+    print("tokens")
+    print(ltok)
     write_result("Tokens:\n")
     write_result(ltok)
+
 
 #Gabriel
 def parser():
@@ -115,7 +119,7 @@ def parser_sem():
     text_arear.config(state='normal')
     text_arear.delete('1.0',tk.END)
     text_arear.config(state='disabled')
-    import sem as sm   
+    import sema as sm   
     sm.listaerr = []
     resultado = sm.parser.parse(datos_parse,tracking=True)
     error = sm.obtenerErrores()
@@ -126,6 +130,7 @@ def parser_sem():
     else:
         write_result("Resultado del analizador semantico:\n")
         write_result(str(resultado))
+
 
 #Eduardo
 #Ventana principal
@@ -143,7 +148,6 @@ labelimg = tk.Label(contenedor1,image=img).pack(pady=0,anchor="ne",side=tk.RIGHT
 
 
 contenedor1.pack(fill=tk.X,side=tk.TOP)
-
 
 #Gabriel
 #Contenedor para parte inferior
@@ -203,3 +207,14 @@ button_syn = tk.Button(contenedor3, text="Análisis sintáctico", command=lambda
 
 
 button_sem = tk.Button(contenedor3, text="Análisis semántico", command=lambda: parser_sem(), padx=75,pady=50).pack(pady=55)
+
+#Gabriel
+#Contenedor para marca de agua
+
+tag_group = tk.Label(contenedor4, text="Grupo 8: Gabriel Loroña, Andrea Vélez, Eduardo Salavarría", bg="cyan",font=("Arial",15)).pack(fill=tk.BOTH, pady=15)
+
+
+
+mainwindow.mainloop()
+
+
