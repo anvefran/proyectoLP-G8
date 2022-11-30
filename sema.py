@@ -62,3 +62,43 @@ def p_tipo_asignacion(p):
   | STRING IGUAL STR
   | INTEGER IGUAL ENTERO
   '''
+#GABRIEL
+#SEMANTICO: 2 casting de enteros a floats
+#Solo puede ser usado cuando se declara una variable
+# conversion := float32(35)
+# conversion2 := float16(15)
+def p_int_casting(p):
+  '''int_casting : FLOAT16 LPAREN ENTERO RPAREN
+  | FLOAT32 LPAREN ENTERO RPAREN
+  '''
+
+#tipos de datos - Eduardo
+def p_datatype(p):
+  '''datatype : INT32
+  | BYTE
+  | UINT
+  | STRING
+  | INTEGER
+  | INT8
+  | INT16
+  | INT64
+  | FLOAT16
+  | FLOAT32
+  | COMPLEX64
+  | COMPLEX128
+  | UINT8
+  | UINT16
+  | UINT32
+  | UINT64
+  | BOOL'''
+
+#Posibles asignaciones para una variable - Andrea
+def p_valor(p):
+  '''valor : ENTERO
+  | FLOAT
+  | STR 
+  | int_casting'''
+
+def p_numero(p):
+  '''numero : ENTERO
+  | FLOAT'''

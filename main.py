@@ -85,3 +85,27 @@ def lexer():
     ltok = lx.getTokens(lx.lexer)
     write_result("Tokens:\n")
     write_result(ltok)
+
+#Gabriel
+def parser():
+    
+    text_arear.config(state='normal')
+    text_arear.delete('1.0',tk.END)
+    text_arear.config(state='disabled')
+    import syn as sn
+    sn.listaerr = []
+    resultado = sn.parser.parse(datos_parse,tracking=True)
+    error = sn.obtenerErrores()
+    if len(error) > 0:
+        resultado = error
+        text_arear.config(state='normal')
+        text_arear.delete('1.0',tk.END)
+        text_arear.config(state='disabled')
+        write_result("Resultado del analizador sintactico:\n")
+        write_result(resultado)
+    else:
+        text_arear.config(state='normal')
+        text_arear.delete('1.0',tk.END)
+        text_arear.config(state='disabled')
+        write_result("Resultado del analizador sintactico:\n")
+        write_result(str(resultado))
