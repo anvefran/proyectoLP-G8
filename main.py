@@ -38,3 +38,33 @@ def abrir_archivo(nomarch):
     text_arear.delete('1.0',tk.END)
     write_result("Codigo cargado y listo para analizar.")
     text_arear.config(state='disabled')
+
+def borrar_contenido():
+    text_area.delete('1.0',tk.END)
+    text_arear.config(state='normal')
+    text_arear.delete('1.0',tk.END)
+    text_arear.config(state='disabled')
+    global ingreso
+    ingreso = ""
+    global datos_parse
+    datos_parse = ""
+
+
+#Guarda el contenido del textbox en un string
+def guardar_contenido():
+    global ingreso
+    ingreso = text_area.get('1.0',tk.END)
+    if ingreso.strip() == "":
+        showinfo(
+        title='Error!',message="No se ha podido cargar el codigo. Revisa tu entrada!")
+        return
+    fileaux = open("fuente.txt","w")
+    for elem in ingreso:
+        fileaux.write(elem)
+    #print(ingreso)
+    fileaux.close()
+    abrir_archivo("fuente.txt")
+    text_arear.config(state='normal')
+    text_arear.delete('1.0',tk.END)
+    write_result("Codigo cargado y listo para analizar.")
+    text_arear.config(state='disabled')
