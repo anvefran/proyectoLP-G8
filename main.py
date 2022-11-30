@@ -68,3 +68,20 @@ def guardar_contenido():
     text_arear.delete('1.0',tk.END)
     write_result("Codigo cargado y listo para analizar.")
     text_arear.config(state='disabled')
+
+#Eduardo
+#Escribe los resultados en el area de resultados
+def write_result(string):
+    text_arear.config(state='normal')
+    text_arear.insert(tk.INSERT, string)
+    text_arear.config(state='disabled')
+
+def lexer():
+    text_arear.config(state='normal')
+    text_arear.delete('1.0',tk.END)
+    text_arear.config(state='disabled')
+    import lexico as lx
+    lx.lexer.input(datos_parse)
+    ltok = lx.getTokens(lx.lexer)
+    write_result("Tokens:\n")
+    write_result(ltok)
