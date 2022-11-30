@@ -171,3 +171,24 @@ contenedor4 = tk.Frame(mainwindow)
 contenedor4.config(bg="cyan")
 contenedor4.pack(fill=tk.BOTH)
 
+
+#Andrea
+#Campos de texto y labels
+labeltxt = tk.Label(contenedor2_txt,text="Código Fuente", bg="gray",font=("Arial",20)).pack(side=tk.TOP,anchor="n",fill=tk.X)
+text_area = scrolledtext.ScrolledText(contenedor2_txt, 
+                                      wrap = tk.WORD, 
+                                      width = 145,
+                                      height = 13, 
+                                      font = ("Arial",
+                                              12), state='normal')
+text_area.pack(anchor="n")
+labeltxt = tk.Label(contenedor2_res,text="Resultado", bg="gray",font=("Arial",20)).pack(side=tk.TOP,anchor="n",fill=tk.X)
+text_arear = scrolledtext.ScrolledText(contenedor2_res, 
+                                      wrap = tk.WORD, 
+                                      width = 145,
+                                      height = 12, 
+                                      font = ("Arial",12),state ='disabled')
+text_arear.pack(anchor="s")
+botonupload = tk.Button(contenedor2_but, text="Enviar", command=guardar_contenido, padx=85,pady=15,font=("Arial",10)).pack(side=tk.LEFT)
+botonupload = tk.Button(contenedor2_but, text="Borrar", command=borrar_contenido, padx=85,pady=15,font=("Arial",10)).pack(side=tk.LEFT)
+botonupload = tk.Button(contenedor2_but,text='Importar',command=select_file, padx=85,pady=15,font=("Arial",10)).pack(side=tk.LEFT)
