@@ -127,3 +127,19 @@ def parser_sem():
         write_result("Resultado del analizador semantico:\n")
         write_result(str(resultado))
 
+#Eduardo
+#Ventana principal
+mainwindow = tk.Tk()
+mainwindow.geometry("1280x720")
+mainwindow.resizable(False, False)
+mainwindow.title("Analizador GoLang")
+#Contenedores
+#Contenedor para label y foto
+contenedor1 = tk.Frame(mainwindow,height=200)
+contenedor1.config(bg="cyan")
+tag_contenedor1 = tk.Label(contenedor1,text="Parser para GoLang",font=("Arial",35),bg="cyan").pack(anchor="w",side=tk.LEFT)
+img = ImageTk.PhotoImage(Image.open("golang.png").resize((150,75), Image.LANCZOS))
+labelimg = tk.Label(contenedor1,image=img).pack(pady=0,anchor="ne",side=tk.RIGHT)
+
+
+contenedor1.pack(fill=tk.X,side=tk.TOP)
