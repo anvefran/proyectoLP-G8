@@ -192,3 +192,14 @@ text_arear.pack(anchor="s")
 botonupload = tk.Button(contenedor2_but, text="Enviar", command=guardar_contenido, padx=85,pady=15,font=("Arial",10)).pack(side=tk.LEFT)
 botonupload = tk.Button(contenedor2_but, text="Borrar", command=borrar_contenido, padx=85,pady=15,font=("Arial",10)).pack(side=tk.LEFT)
 botonupload = tk.Button(contenedor2_but,text='Importar',command=select_file, padx=85,pady=15,font=("Arial",10)).pack(side=tk.LEFT)
+
+#Eduardo
+#Contenedor para analizadores
+
+button_lex = tk.Button(contenedor3, text="Análisis léxico", command=lambda: lexer(), padx=85,pady=50).pack(pady=55)
+
+
+button_syn = tk.Button(contenedor3, text="Análisis sintáctico", command=lambda: parser(), padx=75,pady=50).pack()
+
+
+button_sem = tk.Button(contenedor3, text="Análisis semántico", command=lambda: parser_sem(), padx=75,pady=50).pack(pady=55)
