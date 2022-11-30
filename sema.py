@@ -102,3 +102,39 @@ def p_valor(p):
 def p_numero(p):
   '''numero : ENTERO
   | FLOAT'''
+
+#ANDREA
+#EXPRESIONES: operaciones y comparaciones - Andrea
+#SEMANTICO 3: OPERACIONES DEBEN REALIZARSE CON EL MISMO TIPO
+def p_operacion(p):
+  '''operacion : VARIABLE incDec 
+  | VARIABLE operadorOp valor
+  | VARIABLE PLUS IGUAL valor
+  | VARIABLE PLUS IGUAL VARIABLE
+  | operacionNUM
+  | operacionSTR
+  '''
+def p_operacionNUM(p):
+  '''operacionNUM : numero operadorOp masNumeros'''
+def p_masNumeros(p):
+  '''masNumeros : numero
+  | VARIABLE
+  | numero operadorOp masNumeros'''
+
+def p_operacionSTR(p):
+  '''operacionSTR : STR operadorOp masSTR'''
+def p_masSTR(p):
+  '''masSTR : STR
+  | VARIABLE
+  | STR operadorOp masSTR'''
+  
+def p_operadorOp(p):
+  '''operadorOp : PLUS
+  | MINUS
+  | TIMES
+  | DIVIDE
+  | MODULUS '''
+
+def p_incDec(p):
+  '''incDec : INCREMENT
+  | DECREMENT '''

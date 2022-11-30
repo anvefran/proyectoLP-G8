@@ -109,3 +109,21 @@ def parser():
         text_arear.config(state='disabled')
         write_result("Resultado del analizador sintactico:\n")
         write_result(str(resultado))
+
+#Andrea
+def parser_sem():
+    text_arear.config(state='normal')
+    text_arear.delete('1.0',tk.END)
+    text_arear.config(state='disabled')
+    import sem as sm   
+    sm.listaerr = []
+    resultado = sm.parser.parse(datos_parse,tracking=True)
+    error = sm.obtenerErrores()
+    if len(error) > 0:
+        resultado = error
+        write_result("Resultado del analizador semantico:\n")
+        write_result(resultado)
+    else:
+        write_result("Resultado del analizador semantico:\n")
+        write_result(str(resultado))
+
