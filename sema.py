@@ -138,3 +138,102 @@ def p_operadorOp(p):
 def p_incDec(p):
   '''incDec : INCREMENT
   | DECREMENT '''
+
+#Gabriel
+  #SEMANTICO 4: Las comparaciones solo se pueden realizar al mismo tipo de dato.
+  #Ejemplo : 1>2, "HOLA"<= "hola", no puede existir 1>"hola"
+
+
+def p_comparacion(p):
+  '''comparacion : VARIABLE operadorCmp VARIABLE
+  | STR operadorCmp STR
+  | FLOAT operadorCmp FLOAT
+  | ENTERO operadorCmp ENTERO
+  | VARIABLE operadorCmp STR
+  | STR operadorCmp VARIABLE
+  | ENTERO operadorCmp VARIABLE
+  | VARIABLE operadorCmp ENTERO
+  | FLOAT operadorCmp VARIABLE
+  | VARIABLE operadorCmp FLOAT'''
+
+def p_operadorCmp(p):
+  '''operadorCmp : NOTEQUALTO
+  | GREATEROREQUAL
+  | LESSOREQUAL
+  | GREATERTHAN
+  | LESSTHAN
+  | EQUALTO
+  '''
+
+#ESTRUCTURAS DE CONTROL
+#Gabriel y Eduardo
+def p_conditional_structure(p):
+  '''conditional_structure : IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
+  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
+  | IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
+  | IF comparacion LEFTKEY conditional_block RIGHTKEY
+  | IF comparacion LEFTKEY conditional_block RIGHTKEY elif_structure
+  | IF  comparacion LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
+  | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY forbody RIGHTKEY
+  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitch RIGHTKEY'''
+
+#Gabriel y Eduardo
+def p_elif_structure(p):
+  '''elif_structure : ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY
+  | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY elif_structure
+  | ELSE IF LPAREN comparacion RPAREN LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY'''
+
+#El contenido de un bloque condicional
+def p_conditional_block(p):
+  'conditional_block : cuerpo'
+
+#Gabriel
+def p_cuerposwitchin(p):
+  '''cuerposwitchin : CASE valor COLON cuerpo
+  | DEFAULT COLON cuerpo
+  | DEFAULT COLON
+  '''
+
+def p_cuerposwitch(p):
+  '''cuerposwitch : cuerposwitchin
+  | cuerposwitchin cuerposwitchin
+  | cuerposwitchin cuerposwitchin cuerposwitchin
+  '''
+
+def p_forbody(p):
+  '''forbody : cuerpo
+  | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY cuerpo RIGHTKEY
+  '''
+
+#ESTRUCTURAS DE DATOS: reglas sintácticas para declarar estructuras, es posible invocar a sus métodos.
+#Andrea
+def p_slice(p):
+  '''slice : VARIABLE COLON IGUAL LCOR RCOR datatype LEFTKEY elementos RIGHTKEY
+  | VARIABLE COLON IGUAL LCOR RCOR datatype LEFTKEY RIGHTKEY
+  '''
+
+def p_arrays(p):
+  'arrays : VAR VARIABLE LCOR ENTERO RCOR datatype'
+
+def p_elementos(p):
+  '''elementos : valor
+  | VARIABLE
+  | valor COMMA elementos
+  | VARIABLE COMMA elementos
+  '''
+
+#Gabriel
+def p_maps(p):
+  '''maps : VARIABLE COLON IGUAL MAKE LPAREN MAP LCOR datatype RCOR datatype RPAREN
+  '''
+
+def p_mapelem(p):
+  '''mapelem : VARIABLE LCOR valor RCOR
+  | VARIABLE LCOR valor RCOR IGUAL valor
+  '''
+
+#slice metodos para hallar la longitud y capacidad de un slice, Andrea
+def p_sliceMethods(p):
+  '''sliceMethods  : LEN LPAREN VARIABLE RPAREN
+  | CAP LPAREN VARIABLE RPAREN
+  '''

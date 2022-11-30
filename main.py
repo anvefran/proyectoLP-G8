@@ -143,3 +143,31 @@ labelimg = tk.Label(contenedor1,image=img).pack(pady=0,anchor="ne",side=tk.RIGHT
 
 
 contenedor1.pack(fill=tk.X,side=tk.TOP)
+
+
+#Gabriel
+#Contenedor para parte inferior
+contenedorinf = tk.Frame(mainwindow,height=1080)
+contenedorinf.config(bg="gray")
+#Contenedor para textarea y boton confirmar editar
+contenedor3 = tk.Frame(contenedorinf)
+contenedor3.config(bg="cyan")
+contenedor3.pack(side=tk.LEFT,anchor="ne")
+
+contenedorinf.pack(fill=tk.BOTH)
+
+contenedor2 = tk.Frame(contenedorinf)
+contenedor2_txt = tk.Frame(contenedor2)
+contenedor2_but = tk.Frame(contenedor2)
+contenedor2_but.config(bg="gray")
+contenedor2_res = tk.Frame(contenedor2)
+
+contenedor2_txt.pack(side=tk.TOP,anchor="n")
+contenedor2_but.pack()
+contenedor2_res.pack(side=tk.BOTTOM,anchor="s")
+contenedor2.pack(side=tk.LEFT,anchor="n")
+
+contenedor4 = tk.Frame(mainwindow)
+contenedor4.config(bg="cyan")
+contenedor4.pack(fill=tk.BOTH)
+
