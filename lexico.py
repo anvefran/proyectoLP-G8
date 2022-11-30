@@ -1,3 +1,4 @@
+
 import ply.lex as lex
 
 reservado = {
@@ -101,7 +102,6 @@ tokens = [
   'MODULUS',
   'LEFTKEY',
   'RIGHTKEY',
-  'IGNORE',
 
 ] + list(reservado.values())
 
@@ -124,7 +124,7 @@ t_OR = r'\|\|'
 t_NOT = r'!'
 t_INCREMENT = r'\+\+'
 t_DECREMENT = r'\-\-'
-t_MODULUS = r'%'
+t_MODULUS = r'\%'
 t_GREATEROREQUAL = r'>='
 t_LESSOREQUAL = r'<='
 t_LEFTKEY = r'\{'
@@ -132,7 +132,6 @@ t_RIGHTKEY = r'\}'
 
 #EDUARDO
 t_DOT = r'\.'
-t_IGNORE = r' \t'
 t_COLON = r':'
 t_SEMICOLON = r';'
 t_ARROBA = r'\@'
@@ -142,7 +141,7 @@ t_AMPERSON = r'\&'
 t_COMMA = r','
 t_LCOR = r'\['
 t_RCOR = r'\]'
-t_ignore = ' \t'
+
 
 #Gabriel
 def t_FLOAT(t):
@@ -176,7 +175,7 @@ def t_VARIABLE(t):
 #EDUARDO
 #Agregue conteo de lineas
 def t_newline(t):
-  r'\n+'
+  r'[ \t\r\n]+'
   t.lexer.lineno += len(t.value)
 
 
@@ -194,13 +193,8 @@ def t_error(t):
 
 #Gabriel
 lexer = lex.lex()
-"""
+
 def getTokens(lexer):
   for tok in lexer:
     print(tok)
-file = open("source.txt")
-#EDUARDO
-for line in file:
-  lexer.input(line)
-  getTokens(lexer)
-"""
+
