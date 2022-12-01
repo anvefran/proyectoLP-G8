@@ -1,24 +1,15 @@
-//Eduardo
-//Condicionales
-if(x>2){
-  x+2
-  var variable int32 = 32
-  var floatante float16 = 2.1
+switch os{
+	case 1:
+		fmt.Println("OS X.")
+	case 2:
+		fmt.Println("Linux.")
+		slicename := [] {1,2,32}
+	default:
+		// freebsd, openbsd,
+		// plan9, windows...
+		fmt.Println("Windows.")
 }
 
-func ejemplo1(var1 string)(int32){ //Posee un argumento y un elemento de retorno
-  resta := 2
 
-  //la variable a no se puede utilizar sin que no esté en una defición o en una operación
 
-  if("hola">"HOLA"){
-    x-2
-  } else if (x<3) {
-    x-3
-  }
 
-  return 128 //debe tener el mismo dato de retorno declarado en la firma
-}
-
-//var x int = "hola" //este si debe dar error
-2+6+a++

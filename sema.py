@@ -119,14 +119,16 @@ def p_operacionNUM(p):
 def p_masNumeros(p):
   '''masNumeros : numero
   | VARIABLE
-  | numero operadorOp masNumeros'''
+  | numero operadorOp masNumeros
+  | VARIABLE operadorOp masNumeros'''
 
 def p_operacionSTR(p):
   '''operacionSTR : STR operadorOp masSTR'''
 def p_masSTR(p):
   '''masSTR : STR
   | VARIABLE
-  | STR operadorOp masSTR'''
+  | STR operadorOp masSTR
+  | VARIABLE operadorOp masSTR'''
   
 def p_operadorOp(p):
   '''operadorOp : PLUS
@@ -175,7 +177,8 @@ def p_conditional_structure(p):
   | IF comparacion LEFTKEY conditional_block RIGHTKEY elif_structure
   | IF  comparacion LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
   | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY forbody RIGHTKEY
-  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitch RIGHTKEY'''
+  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitchin RIGHTKEY
+  | SWITCH VARIABLE LEFTKEY cuerposwitchin RIGHTKEY'''
 
 #Gabriel y Eduardo
 def p_elif_structure(p):
@@ -190,16 +193,13 @@ def p_conditional_block(p):
 #Gabriel
 def p_cuerposwitchin(p):
   '''cuerposwitchin : CASE valor COLON cuerpo
-  | DEFAULT COLON cuerpo
-  | DEFAULT COLON
+  | CASE valor COLON cuerpo cuerposwitchin
+  | CASE valor COLON cuerpo cuerposwitchin default
   '''
-
-def p_cuerposwitch(p):
-  '''cuerposwitch : cuerposwitchin
-  | cuerposwitchin cuerposwitchin
-  | cuerposwitchin cuerposwitchin cuerposwitchin
-  '''
-
+def p_default(p):
+  ''' default : DEFAULT COLON cuerpo
+  | DEFAULT COLON'''
+  
 def p_forbody(p):
   '''forbody : cuerpo
   | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY cuerpo RIGHTKEY

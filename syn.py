@@ -73,12 +73,17 @@ def p_datatype(p):
   | UINT64
   | BOOL'''
 
+def p_int_casting(p):
+  '''int_casting : FLOAT16 LPAREN ENTERO RPAREN
+  | FLOAT32 LPAREN ENTERO RPAREN
+  '''
 
 #Posibles asignaciones para una variable - Andrea
 def p_valor(p):
   '''valor : ENTERO
   | FLOAT
-  | STR '''
+  | STR 
+  | int_casting'''
 
 
 def p_numero(p):
@@ -89,7 +94,7 @@ def p_numero(p):
 #EXPRESIONES: operaciones y comparaciones - Andrea
 def p_operacion(p):
   '''operacion : VARIABLE operadorOp VARIABLE
-  | numero operadorOp numero
+  | valor operadorOp valor
   | VARIABLE incDec 
   | VARIABLE operadorOp valor
   | valor operadorOp VARIABLE
@@ -139,7 +144,8 @@ def p_conditional_structure(p):
   | IF comparacion LEFTKEY conditional_block RIGHTKEY elif_structure
   | IF  comparacion LEFTKEY conditional_block RIGHTKEY ELSE LEFTKEY conditional_block RIGHTKEY
   | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY forbody RIGHTKEY
-  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitch RIGHTKEY'''
+  | SWITCH asignacion SEMICOLON VARIABLE LEFTKEY cuerposwitchin RIGHTKEY
+  | SWITCH VARIABLE LEFTKEY cuerposwitchin RIGHTKEY'''
 
 
 #Gabriel y Eduardo
@@ -154,19 +160,15 @@ def p_conditional_block(p):
   'conditional_block : cuerpo'
 
 
-#Gabriel
 def p_cuerposwitchin(p):
   '''cuerposwitchin : CASE valor COLON cuerpo
-  | DEFAULT COLON cuerpo
-  | DEFAULT COLON
+  | CASE valor COLON cuerpo cuerposwitchin
+  | CASE valor COLON cuerpo cuerposwitchin default
   '''
-
-def p_cuerposwitch(p):
-  '''cuerposwitch : cuerposwitchin
-  | cuerposwitchin cuerposwitchin
-  | cuerposwitchin cuerposwitchin cuerposwitchin
-  '''
-
+def p_default(p):
+  ''' default : DEFAULT COLON cuerpo
+  | DEFAULT COLON'''
+  
 def p_forbody(p):
   '''forbody : cuerpo
   | FOR asignacion SEMICOLON comparacion SEMICOLON operacion LEFTKEY cuerpo RIGHTKEY
